@@ -1,0 +1,129 @@
+/* Event Calendar Override style sheet */
+
+
+/* ---BASE--- */
+
+.wcs-timetable__container {
+    position: relative;
+    width: 100%;
+    padding: 0;
+}
+
+.wcs-timetable__container .wcs-timetable {
+    flex-wrap: nowrap !important;
+}
+
+.b3-eco-table {
+    flex-wrap: nowrap !important;
+    justify-content: space-evenly;
+}
+
+/* ---MAIN COLUMN--- */
+
+.b3-eco-main {
+    margin: 0;
+    padding: 25px 25px;
+    background-color: white;
+    width: 50%;
+    max-width: unset !important;
+    flex-shrink: 1 !important;
+    flex-grow: unset !important;
+}
+
+.b3-eco-main .wcs-calendar__header {
+    margin-bottom: 1em;
+}
+
+.b3-eco-main .wcs-table-thead {
+    flex-basis: 1em;
+}
+
+.b3-eco-main .wcs-table-thead .wcs-day {
+    padding-bottom: 0;
+}
+
+.b3-eco-main .wcs-table-thead .wcs-day__title {
+    font-weight: bold;
+    font-size: 80%;
+}
+
+.b3-eco-main .wcs-date span {
+    padding: 0;
+}
+
+.b3-eco-main .wcs-date span:after {
+    position: absolute;
+    width: 2.5em;
+    height: 3.0em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none !important;
+    border: 1px solid #9ac65a;
+    border-radius: 0.6em;
+    margin: 0;
+}
+
+.b3-eco-main .wcs-date--selected span:after {
+    width: 2.5em !important;
+    height: 3.0em !important;
+    border: none;
+    border-radius: 0.6em !important;
+    background-color: #2980b9 !important;
+}
+
+/* ---SIDE COLUMN--- */
+
+.b3-eco-side {
+    background-color: white;
+    width: 50%;
+    flex-shrink: 1 !important;
+    flex-basis: unset !important;
+    flex-grow: unset !important;
+}
+
+.b3-eco-side:before {
+    background: none !important;
+}
+
+.b3-eco-agenda {
+    height: 100%;
+    padding: 0 !important;
+    flex-direction: row !important;
+    -webkit-box-orient: horizontal !important;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.b3-eco-agenda h4 {
+    width: 10%;
+    margin: 1em 0.5em;
+    font-weight: bold;
+}
+
+.b3-eco-agenda h4::before {
+    content: none !important;
+}
+
+.b3-eco-event-image {
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+    min-height: 50%;
+    flex-basis: 100% !important;
+}
+
+.b3-eco-agenda .wcs-class {
+    width: auto;
+    max-width: calc(90% - 2.3em);
+    flex-grow: 1;
+    margin: 1em 0.5em;
+}
+
+.b3-eco-agenda .wcs-class__title{
+    font-weight: bold;
+}
+
+.b3-eco-agenda .wcs-class__meta{
+    font-weight: 400;
+}

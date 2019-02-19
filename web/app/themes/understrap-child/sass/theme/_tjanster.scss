@@ -1,0 +1,73 @@
+.tjanster {
+    .displayarea {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .displayimage {
+        display: block;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center;
+
+        @media only screen and (max-width: 767px) {
+            min-height: 200px;
+        }
+    }
+
+    .displaypadding {
+        padding: 8rem 10rem 6rem 10rem;
+        background-color: rgba(0, 0, 0, 0.62);
+        color: #fff;
+
+        @media (max-width: 991px) {
+            padding: 4rem 2rem 4rem 2rem;
+        }
+    }
+
+    .lightdisplaypadding {
+        padding: 8rem 5rem 6rem 1rem;
+        color: #000;
+
+        @media (max-width: 991px) {
+            padding: 4rem 2rem 4rem 2rem;
+        }
+    }
+
+    .darkdisplaypadding {
+        padding: 8rem 5rem 6rem 8rem;
+        color: #fff;
+
+        @media (max-width: 991px) {
+            padding: 4rem 2rem 4rem 2rem;
+        }
+    }
+
+    .displaypaddingtext {
+        display: block;
+        color: #fff;
+
+        .h1,
+        h1,
+        .h2,
+        h2 .h3,
+        h3 {
+            color: #fff;
+        }
+    }
+
+    .darktransparantbackground {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.7);
+
+        .h1,
+        h1,
+        .h2,
+        h2 .h3,
+        h3 {
+            color: #fff;
+        }
+    }
+}

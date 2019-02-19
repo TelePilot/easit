@@ -1,0 +1,54 @@
+.starttext {
+padding-top: 3rem;
+
+    .omosstext a {
+        color: $white;
+    }
+
+    .areaikon {
+        font-size: 40px;
+    }
+
+    .areaicon-wrapper {
+        font-size: 50px;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    .areaicon {
+        height: 80px;
+        width: 80px;
+        margin: 0 auto 40px auto;
+        ;
+    }
+
+    .areaicon svg {
+        width: 80px;
+    }
+
+    .areaicon-before {
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+
+    .network-icon {
+        fill: #EA5855;
+    }
+
+    .competence-icon {
+        fill: #FAB52C;
+    }
+
+    .growth-icon {
+        fill: #EA5B2A;
+    }
+
+    .btn-secondary {
+        margin: 0 auto;
+    }
+
+    @media only screen and (max-width: 767px) {
+        width: 100%;
+        margin-top: -90px;
+    }
+}

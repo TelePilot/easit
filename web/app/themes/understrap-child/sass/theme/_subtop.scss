@@ -1,0 +1,95 @@
+.subtop {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 65vh;
+    background-size: cover;
+    background-position: center bottom;
+
+    .chevron {
+        color: #fff;
+        font-size: 3rem;
+
+        @media only screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    .fas {
+        margin-left: 1rem;
+    }
+
+    .toptext {
+        width: 960px;
+        padding: 30px 80px 15px 80px;
+        color: #fff;
+        text-shadow: 0 0 5px #000;
+        text-align: center;
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-weight: 100;
+            font-size: 6rem;
+             @media only screen and (max-width: 991px) {
+            font-size: 4rem;
+
+        } 
+        }
+
+        h1,
+        h3 {
+            color: #fff;
+            margin-bottom: 50px;
+        }
+
+        .h1,
+        h1,
+        .h2,
+        h2,
+        .h3,
+        h3,
+        .h4,
+        h4,
+        .h5,
+        h5 {
+            font-family: 'Dancing Script', cursive;
+            font-weight: 100;
+        }
+
+        @media only screen and (max-width: 767px) {
+            width: 100%;
+            padding: 30px 20px 15px 20px;
+
+        }
+
+        .wrapper {
+            padding-top: 0px;
+        }
+    }
+
+    a {
+        color: #fff;
+    }
+
+    .startchevron {
+        width: 100%;
+        position: absolute;
+        bottom: 70px;
+        text-align: center;
+        color: #fff;
+
+        @media only screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+
+
+    @media only screen and (max-width: 991px) {
+
+        .h1,
+        h1 {
+            font-size: 2em;
+            font-weight: 400;
+        }
+    }
+
+}

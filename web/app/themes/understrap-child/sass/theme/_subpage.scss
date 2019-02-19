@@ -1,0 +1,120 @@
+.subpage {
+    .wrapper {
+        padding-top: 80px 0 0 0;
+    }
+
+
+
+    /* Style the header */
+    .extraheader {
+        position: relative;
+        z-index: 1;
+        padding: 10px 16px;
+        background: #b2c3d3;
+        color: #333;
+    }
+
+    /* Page content */
+    .content {
+        padding: 16px;
+    }
+
+
+    /* The sticky class is added to the header with JS when it reaches its scroll position */
+    .sticky {
+        position: fixed;
+        top: 76px;
+        width: 100%;
+        padding-top: 15px;
+        height: 50px;
+    }
+
+    /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+    .sticky + .content {
+        padding-top: 132px;
+    }
+
+    .subpagewrapper {
+        background-color: #fff;
+    }
+
+
+    .datamanagement {}
+
+    .displayarea {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .displayimage {
+        display: block;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: contain;
+        background-position: center;
+
+        @media only screen and (max-width: 767px) {
+            min-height: 200px;
+        }
+    }
+
+    .displaypadding {
+        padding: 8rem 10rem 6rem 10rem;
+        background-color: rgba(0, 0, 0, 0.62);
+        color: #fff;
+
+        @media (max-width: 991px) {
+            padding: 4rem 2rem 4rem 2rem;
+        }
+    }
+
+    .lightdisplaypadding {
+        padding: 8rem 5rem 6rem 1rem;
+        color: #000;
+
+        @media (max-width: 991px) {
+            padding: 4rem 2rem 4rem 2rem;
+        }
+    }
+
+    .fullheight {
+        height: stretch;
+    }
+
+    .darkdisplaypadding {
+        padding: 8rem 5rem 6rem 8rem;
+        ;
+        color: #fff;
+
+        @media (max-width: 991px) {
+            padding: 4rem 2rem 4rem 2rem;
+        }
+    }
+
+    .displaypaddingtext {
+        display: block;
+        color: #fff;
+
+        .h1,
+        h1,
+        .h2,
+        h2 .h3,
+        h3 {
+            color: #fff;
+        }
+    }
+
+    .darktransparantbackground {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.7);
+
+        .h1,
+        h1,
+        .h2,
+        h2 .h3,
+        h3 {
+            color: #fff;
+        }
+    }
+}

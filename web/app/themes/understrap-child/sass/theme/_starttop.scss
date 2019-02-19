@@ -1,0 +1,64 @@
+.starttop {
+    color: #fff;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 65vh; 
+    background-size: cover;
+    .chevron {
+        color: #fff;
+        font-size: 3rem;
+        @media only screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+    .toptext {
+        width: 960px;
+        padding: 30px 80px 15px 80px;
+        color: #fff;
+        h1, h3 {
+            color: #fff;
+        }
+        .h1,
+    h1,
+    .h2,
+    h2,
+    .h3,
+    h3,
+    .h4,
+    h4,
+    .h5,
+    h5 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 100;
+    }
+        @media only screen and (max-width: 767px) {
+            width: 100%;
+            padding: 30px 20px 15px 20px;
+
+        } 
+        .wrapper {
+         padding-top: 0px; 
+    }
+    }
+    a {
+        color: #fff;
+    }
+    .startchevron {
+        width: 100%;
+        position: absolute;
+        bottom: 70px;
+        text-align: center;
+        color: #fff;
+        @media only screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+    
+    @media only screen and (max-width: 767px) {
+            .h1, h1 {
+    font-size: 2em;
+    font-weight: 400;
+}
+        }
+    
+}
