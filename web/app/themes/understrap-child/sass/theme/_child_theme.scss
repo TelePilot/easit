@@ -650,6 +650,10 @@ END RELATED POSTS
     z-index: 1000;
 }
 
+.vc_parallax.show-bg-from-top .vc_parallax-inner {
+    top: 45px !important;
+}
+
 .submenu {
     color: rgb(245, 237, 237);
     box-shadow: 0 4px 8px rgba(0, 0, 0, .1);

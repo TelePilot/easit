@@ -30,6 +30,14 @@ function theme_enqueue_styles() {
     }
 }
 
+add_action("wp_enqueue_scripts", "enqueue_event_calendar_override", 999);
+
+function enqueue_event_calendar_override() {
+    $the_theme = wp_get_theme();
+    wp_enqueue_style( 'event-calendar-override-styles', get_stylesheet_directory_uri() . '/css/event-calendar.css', array(), $the_theme->get( 'Version' ) );
+    wp_enqueue_script( 'event-calendar-override-scripts', get_stylesheet_directory_uri() . '/js/event-calendar.js', array(), $the_theme->get( 'Version' ), true );
+}
+
 
 // disable for posts
 add_filter('use_block_editor_for_post', '__return_false', 10);

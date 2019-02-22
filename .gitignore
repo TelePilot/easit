@@ -59,3 +59,9 @@ typings/
 
 # next.js build output
 .next
+
+# Wordpress
+web/app/uploads
+
+# IDE's
+.idea

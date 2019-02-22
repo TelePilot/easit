@@ -45,7 +45,7 @@
         $(agenda).prepend($(imageDiv));
         const eventContainers = $(agenda).children(".wcs-class");
         $(eventContainers).each(function () {
-            const innerContainer = $(this).children()[0];
+            const innerContainer = $(this).children(".wcs-class__inner")[0];
             modifyEventDOM(innerContainer);
         })
     }

@@ -16,6 +16,8 @@
 
 	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
+    <?php while(have_posts()) : the_post(); ?>
+
 	<div class="entry-content">
 
 		<?php the_content(); ?>
@@ -28,6 +30,7 @@
 		?>
 
 	</div><!-- .entry-content -->
+    <?php endwhile; ?>
 
 	<footer class="entry-footer">
 
