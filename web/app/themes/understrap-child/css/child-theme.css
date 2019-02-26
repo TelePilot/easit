@@ -12005,7 +12005,11 @@ body .navbar-expand-lg {
     #extra-menu-inner-column #extra-menu-fixed ul.menu {
       margin-bottom: 0;
       height: 100%;
-      padding: 0 5em 0 56em;
+      float: right;
+      max-width: -webkit-fit-content;
+      max-width: -moz-fit-content;
+      max-width: fit-content;
+      padding-right: 5em;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -12022,7 +12026,7 @@ body .navbar-expand-lg {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      margin-right: 0;
+      margin-right: 45px;
       margin-bottom: 0;
       text-align: center;
       position: relative; }
