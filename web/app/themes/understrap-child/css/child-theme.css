@@ -11824,6 +11824,9 @@ body .navbar-expand-lg {
         max-width: 420px;
         margin: 0 40px 0 40px; } }
 
+.wpcs_tab {
+  margin-top: 100px; }
+
 .starttext {
   padding-top: 3rem; }
   .starttext .omosstext a {
