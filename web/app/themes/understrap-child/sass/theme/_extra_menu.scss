@@ -54,7 +54,7 @@
         margin: auto;
         width: 100%;
         content: '';
-        border-bottom: 1px #f2ad00 solid;
+        border-bottom: 1px $easit-yellow solid;
         bottom: calc(0.4em + 1px);
         transition: opacity .3s;
       }
@@ -105,7 +105,7 @@
         width: 100%;
         content: '';
         opacity: 1;
-        border-bottom: 2px #f2ad00 solid;
+        border-bottom: 2px $easit-yellow solid;
         bottom: 0.4em;
       }
     }

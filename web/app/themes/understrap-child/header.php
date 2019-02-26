@@ -87,11 +87,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div><!-- .container -->
 			<?php endif; ?>
             <div class="search-box">
-            <input type="text" placeholder="Type to search" class="search-txt">
-            <a href="" class="search-btn">
-                    <i class="fas fa-search"></i>
-            </a>
-        </div>
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Type to search" class="search-txt">
+            </div>
 
 		</nav><!-- .site-navigation -->
 

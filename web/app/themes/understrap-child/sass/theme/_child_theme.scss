@@ -18,6 +18,12 @@ body {
     src: url(http://easit.b3kund.se/web/app/themes/understrap-child/fonts/PlayfairDisplay-Regular.ttf);
 }
 
+i {
+    font-family: "FontAwesome";
+    font-weight: normal;
+    font-style: normal;
+}
+
 .wrapper {
     padding: 0;
 }
@@ -207,7 +213,7 @@ iframe {
 
     .wpb_wrapper {
         max-width: fit-content;
-        background: #f2ad00;
+        background: $easit-yellow;
         padding: 0 1rem;
     }
 }
@@ -252,7 +258,56 @@ iframe {
 
 // Searchbar
 
+.search-box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: width 0.4s ease-in-out;
+    background-color: transparent;
+    height: 35px;
+    width: 35px;
+    border-radius: 15px;
+    padding-left: 10px;
 
+    i {
+        display: inline-block;
+        position: relative;
+        width: 20px;
+        color: #fff;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    input[type=text]{
+        display: inline-block;
+        color: #fff !important;
+        background-color: transparent;
+        transition: width 0.4s ease-in-out, padding 0.4s ease-in-out;
+        font-size: 1rem;
+        width: 0;
+        height: 90%;
+        padding: 0;
+        border: none;
+        border-bottom: 2px solid $easit-yellow;
+
+        &::placeholder {
+            color: #FFFFFF;
+        }
+    }
+
+    &:hover, &:focus-within {
+        width: 240px;
+
+        input[type=text] {
+            padding: 2px;
+            width: calc(100% - 35px);
+        }
+    }
+}
+
+/*
 .search-box
 {
     position: absolute;
@@ -299,7 +354,7 @@ iframe {
     width: 0px;
 
 }
-
+*/
 
 
 
@@ -403,7 +458,7 @@ iframe {
 #main-menu .menu-item.current-page-ancestor, #main-menu .menu-item.current_page_item{
     a{
         font-weight: bold;
-        border-bottom: 2px #f2ad00 solid;
+        border-bottom: 2px $easit-yellow solid;
         padding: 0;
         margin: 0 2rem;
     }
@@ -415,7 +470,7 @@ iframe {
         margin: 0 2rem 2px;
 
         &:hover {
-            border-bottom: 2px #f2ad00 solid;
+            border-bottom: 2px $easit-yellow solid;
             margin-bottom: 0;
         }
     }
@@ -550,7 +605,7 @@ END RELATED POSTS
 .readmore {
     font-family: 'Merriweather', serif;
     font-size: 20px;
-    color: #f2ad00;
+    color: $easit-yellow;
 }
 
 .navbar-toggler-icon {
@@ -728,6 +783,10 @@ textarea {
     border-width: 0 0 1px 0;
     padding: 15px 15px;
 
+    &:focus {
+        outline: none;
+    }
+
     @media (max-width: 991px) {
         padding: 1rem 0;
     }
@@ -856,7 +915,7 @@ FADE END
     display: inline-block;
     text-align: center;
     font-size: 30px;
-    background-color: #f2ad00;
+    background-color: $easit-yellow;
     padding: 0 20px;
     border-radius: 15px 0 15px 15px;
     text-shadow: none;
@@ -897,7 +956,7 @@ form {
 }
 
 .demomeny {
-    background-color: #f2ad00;
+    background-color: $easit-yellow;
     padding: .5rem 0;
 }
 
