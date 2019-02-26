@@ -400,7 +400,7 @@ iframe {
     display: inline-block;
 }
 
-#main-menu .current-page-ancestor, #main-menu .current_page_item{
+#main-menu .menu-item.current-page-ancestor, #main-menu .menu-item.current_page_item{
     a{
         font-weight: bold;
         border-bottom: 2px #f2ad00 solid;

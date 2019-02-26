@@ -11124,7 +11124,7 @@ iframe {
   padding: 20px;
   display: inline-block; }
 
-#main-menu .current-page-ancestor a, #main-menu .current_page_item a {
+#main-menu .menu-item.current-page-ancestor a, #main-menu .menu-item.current_page_item a {
   font-weight: bold;
   border-bottom: 2px #f2ad00 solid;
   padding: 0;
