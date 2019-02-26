@@ -11132,9 +11132,10 @@ iframe {
 
 #main-menu .menu-item a {
   padding: 0;
-  margin: 0 2rem; }
+  margin: 0 2rem 2px; }
   #main-menu .menu-item a:hover {
-    border-bottom: 2px #f2ad00 solid; }
+    border-bottom: 2px #f2ad00 solid;
+    margin-bottom: 0; }
 
 .h1,
 h1 {
