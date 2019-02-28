@@ -158,13 +158,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 <script>
     $(document).ready(function() {
         $(window).on("scroll", function() {
-            if ($(window).scrollTop() >= 20) {
+            if ($(window).scrollTop() >= 100) {
                 $(".navbar").addClass("compressed");
                 $(".logo").addClass("compressed");
             } else {
                 $(".navbar").removeClass("compressed");
             }
         });
+
+        // Adjust first vc row that's not an extra menu to have a top padding equal to the height of the main menu.
+        let menuPadding = ($("#extra-menu-fixed").length > 0 ? "59px" : "99px");
+        $($('.vc_row.wpb_row:not(.vc_inner):not(:has(#extra-menu-fixed))')[0]).css('padding-top', menuPadding);
     });
 </script>
 <!-- Active Header - END -->

@@ -10886,23 +10886,19 @@ relatedposts li {
 
 .textbackground-light {
   color: #000;
-  background-color: rgba(255, 255, 255, 0.9);
-  height: -webkit-fill-available; }
+  background-color: rgba(255, 255, 255, 0.9); }
 
 .textbackground-dark {
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.85);
-  height: -webkit-fill-available; }
+  background-color: rgba(0, 0, 0, 0.85); }
 
 .textbackground-blue {
   color: #fff;
-  background-color: #4f88a6d9;
-  height: -webkit-fill-available; }
+  background-color: #4f88a6d9; }
 
 .textbackground-yellow {
   color: #fff;
-  background-color: #fbd793d9;
-  height: -webkit-fill-available; }
+  background-color: #fbd793d9; }
 
 .wpb_wrapper li {
   margin-bottom: 20px; }
@@ -10919,6 +10915,9 @@ relatedposts li {
 
 .background-bottom {
   background-position: bottom; }
+
+.height-fix {
+  height: -webkit-fill-available; }
 
 .whitetext {
   color: #fff; }
@@ -11126,8 +11125,8 @@ iframe {
   padding: 2rem 4rem;
   background: #333;
   color: #333;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s; }
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; }
 
 .navbar a {
   color: #fff !important; }
@@ -11397,8 +11396,8 @@ END RELATED POSTS
   width: 100%;
   z-index: 1000; }
 
-.vc_parallax.show-bg-from-top .vc_parallax-inner {
-  top: 45px !important; }
+.vc_row.wpb_row:not(.vc_inner) > .wpb_column > .vc_column-inner {
+  padding-top: 0 !important; }
 
 .submenu {
   color: #f5eded;

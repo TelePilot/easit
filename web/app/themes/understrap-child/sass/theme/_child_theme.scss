@@ -126,25 +126,21 @@ relatedposts li {
 .textbackground-light {
     color: #000;
     background-color: rgba(255, 255, 255, .9);
-    height: -webkit-fill-available;
 }
 
 .textbackground-dark {
     color: #fff;
     background-color: rgba(0, 0, 0, .85);
-    height: -webkit-fill-available;
 }
 
 .textbackground-blue {
     color: #fff;
     background-color: #4f88a6d9;
-    height: -webkit-fill-available;
 }
 
 .textbackground-yellow {
     color: #fff;
     background-color: #fbd793d9;
-    height: -webkit-fill-available;
 }
 
 
@@ -167,6 +163,10 @@ relatedposts li {
 
 .background-bottom {
     background-position: bottom;
+}
+
+.height-fix{
+    height: -webkit-fill-available;
 }
 
 .whitetext {
@@ -401,7 +401,7 @@ iframe {
     padding: 2rem 4rem;
     background: #333;
     color: #333;
-    transition: all 0.3s;
+    transition: all 0.2s;
 }
 
 .navbar a {
@@ -739,8 +739,8 @@ END RELATED POSTS
     z-index: 1000;
 }
 
-.vc_parallax.show-bg-from-top .vc_parallax-inner {
-    top: 45px !important;
+.vc_row.wpb_row:not(.vc_inner) > .wpb_column > .vc_column-inner {
+    padding-top: 0 !important;
 }
 
 .submenu {
