@@ -113,6 +113,12 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <input id="search-field" type="text" placeholder="Type to search..." />
                 <i class="fa fa-times" data-dismiss="modal" aria-label="Close">
                 </i>
+                <div id="quick-search-container">
+                    <div class="quick-search-button">Easit Go Plattformen</div>
+                    <div class="quick-search-button">Kundtjänst</div>
+                    <div class="quick-search-button">Kundunika</div>
+                    <div class="quick-search-button">SAAS</div>
+                </div>
             </div>
             <div class="modal-body">
                 <div id="search-results">
@@ -287,15 +293,23 @@ $container = get_theme_mod( 'understrap_container_type' );
     */
 
     $(function(){
-
-        $("#search-field").on("input", function () {
-            const currentSearch = $("#search-field").val().trim();
-            if(currentSearch.length < 1){
+        function fetchSearchResult(term){
+            if(term.length < 1){
                 $("#search-results").html("");
             } else {
-
-                $("#search-results").html("Searching for " + currentSearch + "...");
+                $("#search-results").html("Searching for " + term + "...");
             }
+        }
+
+        $(".quick-search-button").on("click", function () {
+            const term = $(this).text();
+            $("#search-field").val(term);
+            fetchSearchResult(term);
+        });
+
+        $("#search-field").on("input", function () {
+            const term = $("#search-field").val().trim();
+            fetchSearchResult(term);
         });
     });
 </script>

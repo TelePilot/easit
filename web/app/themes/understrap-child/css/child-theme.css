@@ -12158,14 +12158,49 @@ body .navbar-expand-lg {
   border-radius: 0; }
 
 #search-modal .modal-header {
-  border-color: rgba(255, 255, 255, 0.25); }
+  border-color: rgba(255, 255, 255, 0.25);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
   #search-modal .modal-header i {
     padding: 1rem;
     margin: -1rem -1rem -1rem auto;
     float: right;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    position: absolute;
+    right: 15px; }
     #search-modal .modal-header i:hover {
       color: #f2ad00;
+      cursor: pointer; }
+  #search-modal .modal-header #quick-search-container {
+    width: 100%;
+    padding: 1rem 1em 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  #search-modal .modal-header .quick-search-button {
+    display: inline-block;
+    padding: .375rem 1.75rem;
+    border: 1px solid #f2ad00;
+    text-align: center;
+    white-space: nowrap;
+    background: transparent none;
+    vertical-align: middle;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out; }
+    #search-modal .modal-header .quick-search-button:hover {
+      color: #212529;
+      background-color: #f2ad00;
+      border-color: #f2ad00;
       cursor: pointer; }
 
 #search-modal #search-field {
@@ -12173,7 +12208,8 @@ body .navbar-expand-lg {
   border-color: #f2ad00;
   border-bottom-width: 2px;
   background: none;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  padding-bottom: 5px; }
   #search-modal #search-field::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.5); }
   #search-modal #search-field::-ms-input-placeholder {

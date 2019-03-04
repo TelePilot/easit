@@ -7,15 +7,48 @@
 
   .modal-header {
     border-color: rgba(255, 255, 255, 0.25);
+    flex-wrap: wrap;
 
     i {
       padding: 1rem;
       margin: -1rem -1rem -1rem auto;
       float: right;
       color: #FFFFFF;
+      position: absolute;
+      right: 15px;
 
       &:hover {
         color: $easit-yellow;
+        cursor: pointer;
+      }
+    }
+
+    #quick-search-container {
+      width: 100%;
+      padding: 1rem 1em 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .quick-search-button {
+      display: inline-block;
+      padding: .375rem 1.75rem;
+      border: 1px solid $easit-yellow;
+      text-align: center;
+      white-space: nowrap;
+      background: transparent none;
+      vertical-align: middle;
+      border-radius: 0.25rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+
+      &:hover {
+        color: #212529;
+        background-color: $easit-yellow;
+        border-color: $easit-yellow;
         cursor: pointer;
       }
     }
@@ -27,6 +60,7 @@
     border-bottom-width: 2px;
     background: none;
     color: #FFFFFF;
+    padding-bottom: 5px;
 
     &::placeholder {
       color: rgba(255,255,255,.5);
