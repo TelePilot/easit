@@ -10900,6 +10900,37 @@ relatedposts li {
   color: #fff;
   background-color: #fbd793d9; }
 
+.light-link a, .dark-link a {
+  font-weight: 400;
+  border-radius: 0.25rem;
+  margin: 0;
+  padding: .375rem 2.75rem;
+  border: 1px solid transparent;
+  background: transparent none;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  display: inline;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out; }
+
+.light-link a {
+  border-color: #f8f9fa;
+  color: #f8f9fa; }
+  .light-link a:hover {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa; }
+
+.dark-link a {
+  border-color: #343a40;
+  color: #343a40; }
+  .dark-link a:hover {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40; }
+
 .wpb_wrapper li {
   margin-bottom: 20px; }
 
