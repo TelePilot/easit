@@ -11460,7 +11460,7 @@ textarea {
 
 input[type=text],
 input[type=email] {
-  color: #000 !important;
+  color: #000;
   padding-left: 15px;
   line-height: 20px; }
 
@@ -12151,5 +12151,34 @@ body .navbar-expand-lg {
       letter-spacing: 0;
       color: #f2ad00;
       position: relative; }
+
+#search-modal .modal-content {
+  background-color: #4f88a6;
+  color: #FFFFFF;
+  border-radius: 0; }
+
+#search-modal .modal-header {
+  border-color: rgba(255, 255, 255, 0.25); }
+  #search-modal .modal-header i {
+    padding: 1rem;
+    margin: -1rem -1rem -1rem auto;
+    float: right;
+    color: #FFFFFF; }
+    #search-modal .modal-header i:hover {
+      color: #f2ad00;
+      cursor: pointer; }
+
+#search-modal #search-field {
+  width: 100%;
+  border-color: #f2ad00;
+  border-bottom-width: 2px;
+  background: none;
+  color: #FFFFFF; }
+  #search-modal #search-field::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.5); }
+  #search-modal #search-field::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.5); }
+  #search-modal #search-field::placeholder {
+    color: rgba(255, 255, 255, 0.5); }
 
 /*# sourceMappingURL=child-theme.css.map */

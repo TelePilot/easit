@@ -105,6 +105,23 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 </div><!-- #page we need this extra closing tag here -->
 
+<!-- BS Modal for search function -->
+<div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <input id="search-field" type="text" placeholder="Type to search..." />
+                <i class="fa fa-times" data-dismiss="modal" aria-label="Close">
+                </i>
+            </div>
+            <div class="modal-body">
+                <div id="search-results">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <?php wp_footer(); ?>
 
 <!-- ScrollReveal -->
@@ -169,6 +186,14 @@ $container = get_theme_mod( 'understrap_container_type' );
         // Adjust first vc row that's not an extra menu to have a top padding equal to the height of the main menu.
         let menuPadding = ($("#extra-menu-fixed").length > 0 ? "59px" : "99px");
         $($('.vc_row.wpb_row:not(.vc_inner):not(:has(#extra-menu-fixed))')[0]).css('padding-top', menuPadding);
+
+        //DEBUG ONLY
+        window.addEventListener("resize", function () {
+            $(".element-is-sticky").each(function () {
+                const newWidth = document.documentElement.clientWidth;
+                $(this).css("width", newWidth);
+            });
+        });
     });
 </script>
 <!-- Active Header - END -->
@@ -238,8 +263,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <script>
     // SEARCH
-
+    /*
     $(document).ready(function() {
+
         $('#search').on("click", (function(e) {
             $(".form-group").addClass("sb-search-open");
             e.stopPropagation()
@@ -256,12 +282,22 @@ $container = get_theme_mod( 'understrap_container_type' );
                     $(this).css('border', '2px solid red');
                 }
             })
-        })
-
-        $("#search-container").on("click", function () {
-            //Open modal
-        })
+        });
     })
+    */
+
+    $(function(){
+
+        $("#search-field").on("input", function () {
+            const currentSearch = $("#search-field").val().trim();
+            if(currentSearch.length < 1){
+                $("#search-results").html("");
+            } else {
+
+                $("#search-results").html("Searching for " + currentSearch + "...");
+            }
+        });
+    });
 </script>
 
 <script>
