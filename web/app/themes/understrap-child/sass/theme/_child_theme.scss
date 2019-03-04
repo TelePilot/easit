@@ -259,15 +259,9 @@ iframe {
 // Searchbar
 
 .search-box {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    transition: width 0.4s ease-in-out;
     background-color: transparent;
     height: 35px;
     width: 35px;
-    border-radius: 15px;
     padding-left: 10px;
 
     i {
@@ -280,29 +274,10 @@ iframe {
         transform: translateY(-50%);
     }
 
-    input[type=text]{
-        display: inline-block;
-        color: #fff !important;
-        background-color: transparent;
-        transition: width 0.4s ease-in-out, padding 0.4s ease-in-out;
-        font-size: 1rem;
-        width: 0;
-        height: 90%;
-        padding: 0;
-        border: none;
-        border-bottom: 2px solid $easit-yellow;
-
-        &::placeholder {
-            color: #FFFFFF;
-        }
-    }
-
-    &:hover, &:focus-within {
-        width: 240px;
-
-        input[type=text] {
-            padding: 2px;
-            width: calc(100% - 35px);
+    &:hover {
+        cursor: pointer;
+        i {
+            color: $easit-yellow;
         }
     }
 }
@@ -404,8 +379,8 @@ iframe {
     transition: all 0.2s;
 }
 
-.navbar a {
-    color: #fff !important;
+.navbar .menu-item a.nav-link {
+    color: #fff;
 }
 
 .navbar button {
@@ -458,20 +433,44 @@ iframe {
 #main-menu .menu-item.current-page-ancestor, #main-menu .menu-item.current_page_item{
     a{
         font-weight: bold;
-        border-bottom: 2px $easit-yellow solid;
         padding: 0;
         margin: 0 2rem;
+        color: $easit-yellow;
+        letter-spacing: 0;
     }
 }
 
 #main-menu .menu-item {
     a {
         padding: 0;
-        margin: 0 2rem 2px;
+        margin: 0 2rem;
+        text-transform: uppercase;
+        letter-spacing: 1.15px;
 
         &:hover {
-            border-bottom: 2px $easit-yellow solid;
-            margin-bottom: 0;
+            color: $easit-yellow;
+            font-weight: bold;
+            letter-spacing: 0;
+        }
+    }
+
+    &:nth-child(3n){
+        a{
+            letter-spacing: 1.25px;
+
+            &:hover{
+                letter-spacing: 0;
+            }
+        }
+    }
+
+    &:nth-child(5n){
+        a{
+            letter-spacing: 0.9px;
+
+            &:hover{
+                letter-spacing: 0;
+            }
         }
     }
 }

@@ -255,6 +255,10 @@ $container = get_theme_mod( 'understrap_container_type' );
                 }
             })
         })
+
+        $("#search-container").on("click", function () {
+            //Open modal
+        })
     })
 </script>
 </body>
