@@ -29,3 +29,19 @@
 .wpcs_tab {
     margin-top: 100px;
 }
+
+.custom-tab-clone {
+    top: 375px !important;
+
+    a {
+        color: #fff;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        right: 0;
+
+        &:hover {
+            color: #FFFFFF;
+        }
+    }
+}

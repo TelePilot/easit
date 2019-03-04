@@ -237,6 +237,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 </script>
 
 <script>
+    // SEARCH
+
     $(document).ready(function() {
         $('#search').on("click", (function(e) {
             $(".form-group").addClass("sb-search-open");
@@ -261,6 +263,20 @@ $container = get_theme_mod( 'understrap_container_type' );
         })
     })
 </script>
+
+<script>
+    $(document).ready(function () {
+        const tab = $(".wpcs_tab");
+        if(tab) {
+            const tabClone = $($(tab)[0]).clone();
+            tabClone.html("<a href='https://google.com'>Demo</a>");
+            tabClone.removeAttr("aria-label");
+            tabClone.addClass("custom-tab-clone");
+            tabClone.prependTo($("body"));
+        }
+    });
+</script>
+
 </body>
 
 </html>
