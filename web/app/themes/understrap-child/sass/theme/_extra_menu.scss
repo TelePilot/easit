@@ -21,9 +21,9 @@
     ul.menu {
       margin-bottom: 0;
       height: 100%;
-      float: right;
       max-width: fit-content;
-      padding-right: 5em;
+      padding-right: 6.8em;
+      margin-left: auto;
       display: flex;
       justify-content: space-between;
 
@@ -33,7 +33,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-right: 45px;
       margin-bottom: 0;
       text-align: center;
       position: relative;
@@ -43,47 +42,43 @@
         text-transform: uppercase;
         color: #fff;
         padding: .4em 0;
-        letter-spacing: .05em;
-      }
+        letter-spacing: 1.2px;
+        margin: 0 1.35rem;
 
-      a::after {
-        position: absolute;
-        left: 0;
-        right: 0;
-        opacity: 0;
-        margin: auto;
-        width: 100%;
-        content: '';
-        border-bottom: 1px $easit-yellow solid;
-        bottom: calc(0.4em + 1px);
-        transition: opacity .3s;
-      }
-
-      a:hover{
-        &::after{
-          opacity: 1;
+        &:hover {
+          color: $easit-yellow;
+          font-weight: bold;
+          letter-spacing: 0;
         }
       }
     }
 
     li.menu-item:last-child {
       margin-right: 0;
+
+      a {
+        margin-right: 0;
+      }
     }
 
     li.menu-item:first-child {
-      position: absolute;
-      left: 4rem;
+      position: relative;
+      right: 1.9rem;
       width: auto;
-      top: 0;
-      bottom: 0;
-      padding: 0;
 
       a {
         font-family: "Playfair Display";
         text-transform: none;
-        font-size: 1.1em;
         font-weight: normal;
         padding: 0;
+        color: #FFF;
+        letter-spacing: 1.2px;
+        font-size: 1.1em;
+      }
+
+      a:hover {
+        color: #FFF;
+        letter-spacing: 1.2px;
       }
 
       a::after {
@@ -94,19 +89,9 @@
     li.current-menu-item {
       a {
         font-weight: bold;
+        letter-spacing: 0;
+        color: $easit-yellow;
         position: relative;
-      }
-
-      a::after {
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: 100%;
-        content: '';
-        opacity: 1;
-        border-bottom: 2px $easit-yellow solid;
-        bottom: 0.4em;
       }
     }
   }
