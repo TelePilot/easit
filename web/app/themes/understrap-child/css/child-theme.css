@@ -11395,9 +11395,6 @@ END RELATED POSTS
 .bg-primary {
   background-color: #000000 !important; }
 
-.wrapper {
-  top-padding: 40px; }
-
 .sticky {
   position: fixed;
   top: 0;
@@ -11699,6 +11696,12 @@ body .navbar-expand-lg {
 #wpbs_slider .wpcf7-not-valid-tip,
 #wpbs_slider .wpcf7-validation-errors {
   display: none !important; }
+
+/* --- SINGLE POST --- */
+#single-post {
+  padding-top: 100px; }
+  #single-post .entry-content {
+    padding-top: 30px; }
 
 .starttop {
   color: #fff;
