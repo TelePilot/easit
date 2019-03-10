@@ -3,6 +3,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
+require get_stylesheet_directory()."/search_site.php";
+
 function understrap_remove_scripts() {
     wp_dequeue_style( 'understrap-styles' );
     wp_deregister_style( 'understrap-styles' );
@@ -36,6 +38,15 @@ function enqueue_event_calendar_override() {
     $the_theme = wp_get_theme();
     wp_enqueue_style( 'event-calendar-override-styles', get_stylesheet_directory_uri() . '/css/event-calendar.css', array(), $the_theme->get( 'Version' ) );
     wp_enqueue_script( 'event-calendar-override-scripts', get_stylesheet_directory_uri() . '/js/event-calendar.js', array(), $the_theme->get( 'Version' ), true );
+}
+
+add_action('wp_enqueue_scripts', 'add_search_ajax', 999);
+
+function add_search_ajax() {
+    $the_theme = wp_get_theme();
+    wp_enqueue_script('search_site', get_stylesheet_directory_uri().'/js/search.js', array('jquery'), $the_theme->get( 'Version' ), true);
+    wp_localize_script('search_site', 'ajax_object', array('ajax_url' => admin_url('admin-ajax.php')));
+
 }
 
 
