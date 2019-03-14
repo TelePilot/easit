@@ -23,6 +23,26 @@
       }
     }
 
+    #search-button {
+      margin-right: 25px;
+      color: #212529;
+      display: inline-block;
+      padding: .375rem 1.75rem;
+      text-align: center;
+      border-color: transparent;
+      white-space: nowrap;
+      background: $easit-yellow;
+      vertical-align: middle;
+      border-radius: 0.25rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
     #quick-search-container {
       width: 100%;
       padding: 1rem 1em 0;
@@ -55,7 +75,7 @@
   }
 
   #search-field {
-    width: 100%;
+    width: 80%;
     border-color: $easit-yellow;
     border-bottom-width: 2px;
     background: none;

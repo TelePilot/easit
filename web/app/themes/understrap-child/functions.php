@@ -46,7 +46,7 @@ function add_search_ajax() {
     $the_theme = wp_get_theme();
     wp_enqueue_script('search_site', get_stylesheet_directory_uri().'/js/search.js', array('jquery'), $the_theme->get( 'Version' ), true);
     wp_localize_script('search_site', 'ajax_object', array('ajax_url' => admin_url('admin-ajax.php')));
-
+    wp_localize_script('search_site', 'wp_helper', array('site_url' => site_url(), 'search_url' => get_search_link('s')));
 }
 
 

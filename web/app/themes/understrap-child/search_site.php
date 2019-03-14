@@ -9,9 +9,11 @@
 if(!function_exists("search_site")){
     function search_site() {
         if(isset($_REQUEST)) {
-            $searchTerm = $_REQUEST['term'];
+            $searchTerm = trim($_REQUEST['term']);
 
-            echo json_encode(array("data" => "this is a test", "term" => $searchTerm));
+            //$theQuery = new WP_Query();
+
+            echo "<p>Searching for $searchTerm</p>";
         }
 
         die();

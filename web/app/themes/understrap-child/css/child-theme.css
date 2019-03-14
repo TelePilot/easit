@@ -12174,6 +12174,22 @@ body .navbar-expand-lg {
     #search-modal .modal-header i:hover {
       color: #f2ad00;
       cursor: pointer; }
+  #search-modal .modal-header #search-button {
+    margin-right: 25px;
+    color: #212529;
+    display: inline-block;
+    padding: .375rem 1.75rem;
+    text-align: center;
+    border-color: transparent;
+    white-space: nowrap;
+    background: #f2ad00;
+    vertical-align: middle;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out; }
+    #search-modal .modal-header #search-button:hover {
+      cursor: pointer; }
   #search-modal .modal-header #quick-search-container {
     width: 100%;
     padding: 1rem 1em 0;
@@ -12207,7 +12223,7 @@ body .navbar-expand-lg {
       cursor: pointer; }
 
 #search-modal #search-field {
-  width: 100%;
+  width: 80%;
   border-color: #f2ad00;
   border-bottom-width: 2px;
   background: none;

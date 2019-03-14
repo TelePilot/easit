@@ -111,6 +111,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div class="modal-content">
             <div class="modal-header">
                 <input id="search-field" type="text" placeholder="Type to search..." />
+                <button id="search-button" class="btn">Sök</button>
                 <i class="fa fa-times" data-dismiss="modal" aria-label="Close">
                 </i>
                 <div id="quick-search-container">
@@ -269,48 +270,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <script>
     // SEARCH
-    /*
-    $(document).ready(function() {
-
-        $('#search').on("click", (function(e) {
-            $(".form-group").addClass("sb-search-open");
-            e.stopPropagation()
-        }));
-        $(document).on("click", function(e) {
-            if ($(e.target).is("#search") === false && $(".form-control").val().length == 0) {
-                $(".form-group").removeClass("sb-search-open");
-            }
-        });
-        $(".form-control-submit").click(function(e) {
-            $(".form-control").each(function() {
-                if ($(".form-control").val().length == 0) {
-                    e.preventDefault();
-                    $(this).css('border', '2px solid red');
-                }
-            })
-        });
-    })
-    */
 
     $(function(){
-        function fetchSearchResult(term){
-            if(term.length < 1){
-                $("#search-results").html("");
-            } else {
-                $("#search-results").html("Searching for " + term + "...");
-            }
-        }
 
-        $(".quick-search-button").on("click", function () {
-            const term = $(this).text();
-            $("#search-field").val(term);
-            fetchSearchResult(term);
-        });
-
-        $("#search-field").on("input", function () {
-            const term = $("#search-field").val().trim();
-            fetchSearchResult(term);
-        });
     });
 </script>
 
