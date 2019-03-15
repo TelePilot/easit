@@ -109,20 +109,28 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-            <div class="modal-header">
-                <input id="search-field" type="text" placeholder="Type to search..." />
-                <button id="search-button" class="btn">Sök</button>
+            <div class="modal-body">
+                <button id="search-button" class="btn sf-spacing">Sök</button>
+                <div class="search-field-container">
+                    <input id="search-field" class="sf-spacing" type="text" placeholder="Sök på hemsidan..." />
+                </div>
                 <i class="fa fa-times" data-dismiss="modal" aria-label="Close">
                 </i>
                 <div id="quick-search-container">
-                    <div class="quick-search-button">Easit Go Plattformen</div>
-                    <div class="quick-search-button">Kundtjänst</div>
-                    <div class="quick-search-button">Kundunika</div>
-                    <div class="quick-search-button">SAAS</div>
-                </div>
-            </div>
-            <div class="modal-body">
-                <div id="search-results">
+                    <?php
+                    if (has_nav_menu('quick-search')) {
+                        $menuName = get_term(get_nav_menu_locations()['quick-search'], 'nav_menu')->name;
+
+                        echo "<h2 class='menu-title'>$menuName</h2>";
+
+                        wp_nav_menu(array(
+                                'theme_location' => 'quick-search',
+                                'container_id' => 'quick-search-menu',
+                                'fallback_cb' => false
+                            )
+                        );
+                    }
+                    ?>
                 </div>
             </div>
         </div>

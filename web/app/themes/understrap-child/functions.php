@@ -84,6 +84,10 @@ if( function_exists('acf_add_options_page') ) {
  
 }
 
+add_post_type_support( 'page', 'excerpt' );
+
+register_nav_menu( "quick-search", "Quick search menu" );
+
 
 /**
 	*	Registrers custom post type

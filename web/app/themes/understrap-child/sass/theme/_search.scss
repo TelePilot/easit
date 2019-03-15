@@ -1,21 +1,27 @@
 #search-modal {
+  .modal-dialog {
+    margin-top: 10rem;
+    max-width: 70%;
+  }
+
   .modal-content {
-    background-color: $easit-blue;
-    color: #FFFFFF;
+    background-color: #FFFFFF;
+    color: $easit-black-text;
     border-radius: 0;
   }
 
-  .modal-header {
-    border-color: rgba(255, 255, 255, 0.25);
+  .modal-body {
     flex-wrap: wrap;
+    padding: 5rem;
 
     i {
-      padding: 1rem;
+      padding: 0.6rem;
       margin: -1rem -1rem -1rem auto;
       float: right;
-      color: #FFFFFF;
+      color: $easit-black-text;
       position: absolute;
-      right: 15px;
+      right: 1rem;
+      top: 1rem;
 
       &:hover {
         color: $easit-yellow;
@@ -23,67 +29,100 @@
       }
     }
 
-    #search-button {
-      margin-right: 25px;
-      color: #212529;
-      display: inline-block;
-      padding: .375rem 1.75rem;
+    .sf-spacing {
+      border: none;
+      border-radius: 0;
       text-align: center;
+      font-size: 1.5rem;
+      line-height: 1.5;
+      padding: .5rem 2.75rem;
+    }
+
+    .search-field-container {
+      overflow: hidden;
+
+      #search-field {
+        width: 100%;
+        background-color: #eeefef;
+
+        &::placeholder {
+          color: rgba(0,0,0,.5);
+          text-align: center;
+        }
+      }
+    }
+
+    #search-button {
+      color: #FFFFFF;
+      position: absolute;
+      right: 5rem;
       border-color: transparent;
       white-space: nowrap;
       background: $easit-yellow;
       vertical-align: middle;
-      border-radius: 0.25rem;
-      font-size: 1rem;
-      line-height: 1.5;
       transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
 
       &:hover {
         cursor: pointer;
+        color: $easit-black-text;
       }
     }
 
     #quick-search-container {
       width: 100%;
-      padding: 1rem 1em 0;
+      margin-top: 45px;
+      padding: 1rem 4rem 0;
       display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      flex-wrap: wrap;
-    }
+      flex-direction: column;
+      align-items: center;
 
-    .quick-search-button {
-      display: inline-block;
-      padding: .375rem 1.75rem;
-      border: 1px solid $easit-yellow;
-      text-align: center;
-      white-space: nowrap;
-      background: transparent none;
-      vertical-align: middle;
-      border-radius: 0.25rem;
-      font-size: 1rem;
-      line-height: 1.5;
-      transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
-
-      &:hover {
-        color: #212529;
-        background-color: $easit-yellow;
-        border-color: $easit-yellow;
-        cursor: pointer;
+      .menu-title {
+        font-weight: 400;
       }
-    }
-  }
 
-  #search-field {
-    width: 80%;
-    border-color: $easit-yellow;
-    border-bottom-width: 2px;
-    background: none;
-    color: #FFFFFF;
-    padding-bottom: 5px;
+      #quick-search-menu {
+        margin-top: 20px;
 
-    &::placeholder {
-      color: rgba(255,255,255,.5);
+        .menu {
+          display: flex;
+          margin: auto;
+          max-width: 90%;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          padding: 15px;
+        }
+
+        .menu-item {
+          display: inline-block;
+          margin-bottom: 10px;
+          margin-right: 10px;
+          padding: .375rem 1.75rem;
+          border: 1px solid $easit-black-text;
+          text-align: center;
+          white-space: nowrap;
+          background: transparent none;
+          vertical-align: middle;
+          border-radius: 0.15rem;
+          font-size: 1.5rem;
+          line-height: 1.5;
+          transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+
+          &:hover {
+            color: #212529;
+            background-color: $easit-yellow;
+            cursor: pointer;
+          }
+
+          a {
+            color: inherit;
+
+            &:hover {
+              color: inherit;
+            }
+          }
+        }
+      }
     }
   }
 }

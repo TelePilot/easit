@@ -21,8 +21,10 @@
     }
     */
 
-    $(".quick-search-button").on("click", function () {
-        const term = $(this).text();
+    $("#search-field").keyup(function (e) {
+        if(e.keyCode === 13){
+            $("#search-button").trigger("click");
+        }
     });
 
     $("#search-button").on("click", function () {
