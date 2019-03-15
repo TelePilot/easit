@@ -87,6 +87,7 @@ if( function_exists('acf_add_options_page') ) {
 add_post_type_support( 'page', 'excerpt' );
 
 register_nav_menu( "quick-search", "Quick search menu" );
+register_nav_menu( "footer", "Detailed menu in footer" );
 
 
 /**

@@ -27,9 +27,6 @@ i {
 .wrapper {
     padding: 0;
 }
-.footer {
-    background-color: #fff!important;
-}
 .wrap-flexbox {
     display: flex;
     /* [1] */
@@ -873,9 +870,9 @@ div.wpcf7 {
 
 .anchor {
     display: block;
-    height: 115px;
+    height: 0;
     /*same height as header*/
-    margin-top: -4.5rem;
+    // margin-top: -4.5rem;
     /*same height as header*/
     visibility: hidden;
 }

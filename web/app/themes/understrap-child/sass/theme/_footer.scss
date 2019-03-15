@@ -1,83 +1,66 @@
 .footer {
-    color: #424242;
-    font-size: .8rem;
-    a4 {
-        color: #424242;
-    }
+  background-color: #f7f8f8;
 
-    .h1, h1, .h2, h2, .h3, h3, .h4, h4 {
-        color: #424242;
-    }
-    
-    .snowy {
-        background-color: #4b4b4b;
-        padding: 20px 0!important;
-    }
-    
-    .snowy a {
-        font-size: .7rem;
-        color: #b7b7b7!important;
-    }
+  .container {
+    padding: 2rem 4rem;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 
-    .footerlogo {
-        height: 30px;
-    }
+  #footer-menu {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 8;
+    justify-content: flex-start;
+    margin-right: 50px;
 
-    .row {
-        margin: 0;
-        padding: 40px 0;
-    }
+    .menu{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
 
-    .areaikon {
-        font-size: 40px;
-    }
+      &>.menu-item {
+        margin-right: 50px;
 
-    .areaicon-wrapper {
-        font-size: 50px;
-        margin-top: 60px;
-        margin-bottom: 30px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
     }
+  }
 
-    .areaicon {
-        display: inline-block;
-        float: left;
-        height: 80px;
-        width: 80px;
-        margin: 0 auto;
-    }
+  .footer-right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 8;
+    max-width: 255px;
 
-    .eu-logo {
-        height: 40px;
-        width: auto;
+    .footer-section {
+      margin-bottom: 25px;
     }
+  }
 
-    .areaicon svg {
-        width: 60px;
-    }
+  h3.footer-title, .menu>.menu-item {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
 
-    .areaicon-before {
-        margin-top: -80px;
-        margin-bottom: 40px;
-    }
+  h4.footer-title, .sub-menu>.menu-item {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+  }
 
-    .facebook-icon {
-        fill: #424242;
-    }
-
-    .linkedin-icon {
-        fill: #424242;
-    }
-
-    .youtube-icon {
-        fill: #424242;
-    }
-    
-    .logo-color {
-        fill: #424242;
-    }
-
-    .hr {
-        margin-top: 4rem !important;
-        margin-bottom: 4rem !important;
-    }
+  h5.footer-title, .sub-menu>.menu-item>.sub-menu>.menu-item {
+    font-weight: 400;
+    color: #383435;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+  }
 }

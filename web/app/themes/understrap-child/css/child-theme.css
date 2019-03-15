@@ -10795,9 +10795,6 @@ i {
 .wrapper {
   padding: 0; }
 
-.footer {
-  background-color: #fff !important; }
-
 .wrap-flexbox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11493,9 +11490,8 @@ div.wpcf7 {
 
 .anchor {
   display: block;
-  height: 115px;
+  height: 0;
   /*same height as header*/
-  margin-top: -4.5rem;
   /*same height as header*/
   visibility: hidden; }
 
@@ -11892,54 +11888,81 @@ body .navbar-expand-lg {
       margin-top: -90px; } }
 
 .footer {
-  color: #424242;
-  font-size: .8rem; }
-  .footer a4 {
-    color: #424242; }
-  .footer .h1, .footer h1, .footer .h2, .footer h2, .footer .h3, .footer h3, .footer .h4, .footer h4 {
-    color: #424242; }
-  .footer .snowy {
-    background-color: #4b4b4b;
-    padding: 20px 0 !important; }
-  .footer .snowy a {
-    font-size: .7rem;
-    color: #b7b7b7 !important; }
-  .footer .footerlogo {
-    height: 30px; }
-  .footer .row {
-    margin: 0;
-    padding: 40px 0; }
-  .footer .areaikon {
-    font-size: 40px; }
-  .footer .areaicon-wrapper {
-    font-size: 50px;
-    margin-top: 60px;
-    margin-bottom: 30px; }
-  .footer .areaicon {
-    display: inline-block;
-    float: left;
-    height: 80px;
-    width: 80px;
-    margin: 0 auto; }
-  .footer .eu-logo {
-    height: 40px;
-    width: auto; }
-  .footer .areaicon svg {
-    width: 60px; }
-  .footer .areaicon-before {
-    margin-top: -80px;
-    margin-bottom: 40px; }
-  .footer .facebook-icon {
-    fill: #424242; }
-  .footer .linkedin-icon {
-    fill: #424242; }
-  .footer .youtube-icon {
-    fill: #424242; }
-  .footer .logo-color {
-    fill: #424242; }
-  .footer .hr {
-    margin-top: 4rem !important;
-    margin-bottom: 4rem !important; }
+  background-color: #f7f8f8; }
+  .footer .container {
+    padding: 2rem 4rem;
+    width: 100%;
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .footer #footer-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-flex: 8;
+        -ms-flex-positive: 8;
+            flex-grow: 8;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-right: 50px; }
+    .footer #footer-menu .menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      width: 100%; }
+      .footer #footer-menu .menu > .menu-item {
+        margin-right: 50px; }
+        .footer #footer-menu .menu > .menu-item:last-child {
+          margin-right: 0; }
+  .footer .footer-right-side {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-negative: 8;
+        flex-shrink: 8;
+    max-width: 255px; }
+    .footer .footer-right-side .footer-section {
+      margin-bottom: 25px; }
+  .footer h3.footer-title, .footer .menu > .menu-item {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.5rem; }
+  .footer h4.footer-title, .footer .sub-menu > .menu-item {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.1rem; }
+  .footer h5.footer-title, .footer .sub-menu > .menu-item > .sub-menu > .menu-item {
+    font-weight: 400;
+    color: #383435;
+    text-transform: capitalize;
+    font-size: 0.9rem; }
 
 .subpage {
   /* Style the header */
