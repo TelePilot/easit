@@ -110,7 +110,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-body">
-                <button id="search-button" class="btn sf-spacing">Sök</button>
+                <button id="search-button" class="btn sf-spacing"><?php echo __("Search", 'understrap'); ?></button>
                 <div class="search-field-container">
                     <input id="search-field" class="sf-spacing" type="text" placeholder="Sök på hemsidan..." />
                 </div>

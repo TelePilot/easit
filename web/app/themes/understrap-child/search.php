@@ -26,7 +26,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 			<main class="site-main search-result-main" id="main">
                 <header class="page-header">
-                    <button id="search-button-header" class="btn sf-spacing">Sök</button>
+                    <button id="search-button-header" class="btn sf-spacing"><?php echo __("Search", 'understrap'); ?></button>
                     <div class="search-field-container">
                         <input id="search-field-header" class="sf-spacing" type="text"
                                value="<?php echo get_search_query(); ?>"/>
