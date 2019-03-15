@@ -31,4 +31,15 @@
         const term = $("#search-field").val().trim();
         window.location.href = wp_helper.search_url + "?s=" + term + "&submit=Search";
     });
+
+    $("#search-field-header").keyup(function (e) {
+        if(e.keyCode === 13){
+            $("#search-button-header").trigger("click");
+        }
+    });
+
+    $("#search-button-header").on("click", function () {
+        const term = $("#search-field-header").val().trim();
+        window.location.href = wp_helper.search_url + "?s=" + term + "&submit=Search";
+    });
 })();

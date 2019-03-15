@@ -24,18 +24,19 @@ $container   = get_theme_mod( 'understrap_container_type' );
 			<!-- Do the left sidebar check and opens the primary div -->
 			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
 
-			<main class="site-main" id="main">
-
+			<main class="site-main search-result-main" id="main">
+                <header class="page-header">
+                    <button id="search-button-header" class="btn sf-spacing">Sök</button>
+                    <div class="search-field-container">
+                        <input id="search-field-header" class="sf-spacing" type="text"
+                               value="<?php echo get_search_query(); ?>"/>
+                    </div>
+                    <h3 class="search-title"><?php printf(
+                            esc_html__('Search Results for: %s', 'understrap'),
+                            '<span>'. get_search_query() . '</span>' ); ?>
+                    </h3>
+                </header><!-- .page-header -->
 				<?php if ( have_posts() ) : ?>
-
-					<header class="page-header">
-						
-							<h1 class="page-title"><?php printf(
-							/* translators:*/
-							 esc_html__( 'Search Results for: %s', 'understrap' ),
-								'<span>' . get_search_query() . '</span>' ); ?></h1>
-
-					</header><!-- .page-header -->
 
 					<?php /* Start the Loop */ ?>
 					<?php while ( have_posts() ) : the_post(); ?>
@@ -52,9 +53,9 @@ $container   = get_theme_mod( 'understrap_container_type' );
 					<?php endwhile; ?>
 
 				<?php else : ?>
-
-					<?php get_template_part( 'loop-templates/content', 'none' ); ?>
-
+                    <p>
+                    <?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'understrap' ); ?>
+                    </p>
 				<?php endif; ?>
 
 			</main><!-- #main -->

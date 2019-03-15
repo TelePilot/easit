@@ -126,3 +126,56 @@
     }
   }
 }
+
+.search-result-main {
+
+  .page-header {
+    padding-top: 3rem;
+    margin-bottom: 25px;
+
+    .search-title {
+      margin-top: 15px;
+      font-weight: 400;
+    }
+  }
+
+
+  .sf-spacing {
+    border: none;
+    border-radius: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding: .5rem 2.75rem;
+  }
+
+  .search-field-container {
+    overflow: hidden;
+
+    #search-field-header {
+      width: 100%;
+      background-color: #eeefef;
+
+      &::placeholder {
+        color: rgba(0,0,0,.5);
+        text-align: center;
+      }
+    }
+  }
+
+  #search-button-header {
+    color: #FFFFFF;
+    position: absolute;
+    right: 1rem;
+    border-color: transparent;
+    white-space: nowrap;
+    background: $easit-yellow;
+    vertical-align: middle;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      color: $easit-black-text;
+    }
+  }
+}
