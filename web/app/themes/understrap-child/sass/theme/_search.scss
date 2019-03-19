@@ -127,14 +127,18 @@
   }
 }
 
+/* --- SEARCH RESULTS --- */
+
 .search-result-main {
+  font-family: minion-pro,sans-serif;
 
   .page-header {
     padding-top: 3rem;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
 
     .search-title {
       margin-top: 15px;
+      font-family: "Playfair Display";
       font-weight: 400;
     }
   }
@@ -151,6 +155,7 @@
 
   .search-field-container {
     overflow: hidden;
+    font-family: myriad-pro,sans-serif;
 
     #search-field-header {
       width: 100%;
@@ -175,6 +180,38 @@
 
     &:hover {
       cursor: pointer;
+      color: $easit-black-text;
+    }
+  }
+
+  .search-result {
+    margin-bottom: 50px;
+
+    .search-header {
+
+      .search-result-type {
+        text-transform: uppercase;
+        color: $easit-darkgrey-text;
+        font-weight: bolder;
+      }
+
+      .search-result-title a {
+        color: $easit-blue-text;
+        font-weight: normal;
+
+        &:hover {
+          color: $easit-blue-text;
+        }
+      }
+
+      .search-result-link {
+        color: $easit-grey-text;
+        font-weight: lighter;
+      }
+    }
+
+    .search-summary {
+      font-size: 1rem;
       color: $easit-black-text;
     }
   }
