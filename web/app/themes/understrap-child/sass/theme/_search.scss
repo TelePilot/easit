@@ -130,16 +130,16 @@
 /* --- SEARCH RESULTS --- */
 
 .search-result-main {
-  font-family: minion-pro,sans-serif;
 
   .page-header {
     padding-top: 3rem;
     margin-bottom: 45px;
+    border-bottom: 1px solid $easit-blue;
 
     .search-title {
       margin-top: 15px;
-      font-family: "Playfair Display";
       font-weight: 400;
+      font-family: "Playfair Display";
     }
   }
 
@@ -148,18 +148,22 @@
     border: none;
     border-radius: 0;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     line-height: 1.5;
     padding: .5rem 2.75rem;
   }
 
   .search-field-container {
     overflow: hidden;
-    font-family: myriad-pro,sans-serif;
+
+    p,a,h1,h2,h3,h4,h5,h6,button,button,input,input::placeholder {
+      font-family: myriad-pro,sans-serif;
+    }
 
     #search-field-header {
       width: 100%;
       background-color: #eeefef;
+      font-weight: lighter;
 
       &::placeholder {
         color: rgba(0,0,0,.5);
@@ -185,14 +189,20 @@
   }
 
   .search-result {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+
+    p,a,h1,h2,h3,h4,h5,h6,button,input {
+      font-family: minion-pro,sans-serif;
+    }
 
     .search-header {
 
       .search-result-type {
         text-transform: uppercase;
         color: $easit-darkgrey-text;
-        font-weight: bolder;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 0.9rem;
       }
 
       .search-result-title a {
@@ -213,6 +223,7 @@
     .search-summary {
       font-size: 1rem;
       color: $easit-black-text;
+      font-family: minion-pro,sans-serif;
     }
   }
 }
