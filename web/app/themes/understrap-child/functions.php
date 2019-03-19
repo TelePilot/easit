@@ -89,6 +89,12 @@ add_post_type_support( 'page', 'excerpt' );
 register_nav_menu( "quick-search", "Quick search menu" );
 register_nav_menu( "footer", "Detailed menu in footer" );
 
+add_filter( 'wp_trim_excerpt', 'understrap_all_excerpts_get_more_link' );
+
+function understrap_all_excerpts_get_more_link($post_excerpt){
+    return (strlen($post_excerpt) > 0 ? $post_excerpt : "");
+}
+
 
 /**
 	*	Registrers custom post type
