@@ -125,8 +125,8 @@
 
   .page-header {
     padding-top: 3rem;
-    margin-bottom: 45px;
-    border-bottom: 1px solid $easit-blue;
+    margin-bottom: 25px;
+    border-bottom: 2px solid $easit-blue;
 
     .search-title {
       margin-top: 15px;
@@ -180,42 +180,48 @@
     }
   }
 
-  .search-result {
-    margin-bottom: 40px;
+  .search-results-container {
+    width: 60%;
 
-    p,a,h1,h2,h3,h4,h5,h6,button,input {
-      font-family: minion-pro,sans-serif;
-    }
+    .search-result {
+      margin-bottom: 40px;
 
-    .search-header {
-
-      .search-result-type {
-        text-transform: uppercase;
-        color: $easit-darkgrey-text;
-        font-weight: bold;
-        letter-spacing: 2px;
-        font-size: 0.9rem;
+      p, a, h1, h2, h3, h4, h5, h6, button, input {
+        font-family: minion-pro, sans-serif;
       }
 
-      .search-result-title a {
-        color: $easit-blue-text;
-        font-weight: normal;
+      .search-header {
 
-        &:hover {
+        .search-result-type {
+          text-transform: uppercase;
+          color: $easit-darkgrey-text;
+          font-weight: bold;
+          letter-spacing: 2px;
+          font-size: .8rem;
+          padding-left: 1px;
+        }
+
+        .search-result-title a {
           color: $easit-blue-text;
+          font-weight: normal;
+          font-size: 1.2rem;
+
+          &:hover {
+            color: $easit-blue-text;
+          }
+        }
+
+        .search-result-link {
+          color: $easit-grey-text;
+          font-weight: lighter;
         }
       }
 
-      .search-result-link {
-        color: $easit-grey-text;
-        font-weight: lighter;
+      .search-summary {
+        font-size: 1rem;
+        color: $easit-black-text;
+        font-family: minion-pro, sans-serif;
       }
-    }
-
-    .search-summary {
-      font-size: 1rem;
-      color: $easit-black-text;
-      font-family: minion-pro,sans-serif;
     }
   }
 }
