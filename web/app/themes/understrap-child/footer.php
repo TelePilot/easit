@@ -18,47 +18,65 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="wrapper footer" id="wrapper-footer">
     <div class="<?php echo esc_attr($container); ?>">
-        <?php
-        if (has_nav_menu('footer')) {
-            wp_nav_menu(array(
-                    'theme_location' => 'footer',
-                    'container_id' => 'footer-menu',
-                    'fallback_cb' => false
-                )
-            );
-        }
-        ?>
-        <div class="footer-right-side">
-            <div class="footer-newsletter footer-section">
-                <h3 class="footer-title"><?php echo __("Newsletter", "understrap");?></h3>
-                <input class="newsletter-field" type="email" placeholder="<?php echo __("Email", "understrap");?>"/>
-                <p class="newsletter-policy">
-                    Genom att fylla i formuläret godkänner du
-                    att dina personuppgifter behandlas enligt vår
-                    integritetspolicy.
-                </p>
-                <button id="newsletter-signup" class="btn"><?php echo __("Subscribe", "understrap")?></button>
-            </div>
-            <div class="footer-socials footer-section">
-                <h3 class="footer-title"><?php echo __("Follow us", "understrap");?></h3>
-            </div>
-            <div class="footer-contact footer-section">
+        <div class="footer-upper">
+            <?php
+            if (has_nav_menu('footer')) {
+                wp_nav_menu(array(
+                        'theme_location' => 'footer',
+                        'container_id' => 'footer-menu',
+                        'fallback_cb' => false
+                    )
+                );
+            }
+            ?>
+            <div class="footer-right-side">
                 <h3 class="footer-title"><?php echo __("Contact", "understrap");?></h3>
                 <div class="contact-section">
-                    <h4 class="footer-title"><?php echo __("Phone", "understrap");?></h4>
+                    <h4 class="footer-title"><?php echo __("Phone", "understrap");?>:</h4>
                     <p>0771-25 00 00</p>
                 </div>
                 <div class="contact-section">
-                    <h4 class="footer-title"><?php echo __("Email", "understrap");?></h4>
+                    <h4 class="footer-title"><?php echo __("Email", "understrap");?>:</h4>
                     <p>info@easit.se</p>
                 </div>
                 <div class="contact-section">
-                    <h4 class="footer-title"><?php echo __("Address", "understrap");?></h4>
+                    <h4 class="footer-title"><?php echo __("Address", "understrap");?>:</h4>
                     <p>
-                        Trädgårdsgatan 7, 852 31 Sundsvall
-                        Svetsarvägen 7, 171 41 Solna
+                        Trädgårdsgatan 7<br>
+                        852 31 Sundsvall
+                        <br><br>
+                        Svetsarvägen 7<br>
+                        171 41 Solna
                     </p>
                 </div>
+            </div>
+        </div>
+        <div class="footer-lower">
+            <div>
+                <h2 class="footer-title"><?php echo __("Newsletter", "understrap");?></h2>
+                <p><?php echo __("Subscribe to our newsletter!","understrap"); ?></p>
+            </div>
+            <div class="signup-form">
+                <input class="newsletter-field" type="email" placeholder="<?php echo __("Email", "understrap");?>"/>
+                <button id="newsletter-signup" class="btn"><i class="fas fa-chevron-right"></i></button>
+                <p class="newsletter-policy">
+                    <?php
+                    echo __("Genom att fylla i formuläret godkänner du
+                    att dina personuppgifter behandlas enligt vår
+                    integritetspolicy.", "understrap");
+                    ?>
+                </p>
+            </div>
+            <div class="footer-socials">
+                <a href="https://facebook.com">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://linkedin.com">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://youtube.com">
+                    <i class="fab fa-youtube-play"></i>
+                </a>
             </div>
         </div>
     </div><!-- container end -->
