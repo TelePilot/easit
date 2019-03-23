@@ -42,4 +42,11 @@
         const term = $("#search-field-header").val().trim();
         window.location.href = wp_helper.search_url + "?s=" + term + "&submit=Search";
     });
+
+    $('#search-modal').on('shown.bs.modal', function () {
+        $("#search-field").focus();
+    });
+
+    const searchContainer = $('#search-container').detach();
+    $("#main-menu").prepend(searchContainer);
 })();
