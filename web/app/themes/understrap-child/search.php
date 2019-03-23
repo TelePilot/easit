@@ -36,6 +36,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
                             '<span>'. get_search_query() . '</span>' ); ?>
                     </h3>
                 </header><!-- .page-header -->
+                <div class="search-results-container">
 				<?php if ( have_posts() ) : ?>
 
 					<?php /* Start the Loop */ ?>
@@ -57,6 +58,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
                     <?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'understrap' ); ?>
                     </p>
 				<?php endif; ?>
+                </div>
 
 			</main><!-- #main -->
 
