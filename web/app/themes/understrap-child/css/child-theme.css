@@ -12346,22 +12346,8 @@ body .navbar-expand-lg {
         padding: 15px; }
       #search-modal .modal-body #quick-search-container #quick-search-menu .menu-item {
         display: inline-block;
-        margin-bottom: 10px;
-        margin-right: 10px;
-        padding: .375rem 1.75rem;
-        border: 1px solid #231F20;
-        text-align: center;
-        white-space: nowrap;
-        background: transparent none;
-        vertical-align: middle;
-        border-radius: 0.15rem;
-        font-size: 1.5rem;
-        line-height: 1.5;
-        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out; }
-        #search-modal .modal-body #quick-search-container #quick-search-menu .menu-item:hover {
-          color: #212529;
-          background-color: #f2ad00;
-          cursor: pointer; }
+        margin-bottom: 20px;
+        margin-right: 20px; }
         #search-modal .modal-body #quick-search-container #quick-search-menu .menu-item a {
           padding: .375rem 2.75rem;
           color: #343a40;
@@ -12427,6 +12413,7 @@ body .navbar-expand-lg {
   .search-result-main #search-button-header:hover {
     cursor: pointer;
     color: #231F20; }
+
 .search-result-main .search-results-container {
   width: 60%; }
   .search-result-main .search-results-container .search-result {
