@@ -69,6 +69,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<span class="navbar-toggler-icon"></span>
 				</button>
 
+                <div id="search-container" class="search-box"
+                     data-toggle="modal" data-target="#search-modal">
+                    <i class="fas fa-search"></i>
+                </div>
+
 				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
 					array(
@@ -86,10 +91,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php if ( 'container' == $container ) : ?>
 			</div><!-- .container -->
 			<?php endif; ?>
-            <div id="search-container" class="search-box"
-                 data-toggle="modal" data-target="#search-modal">
-                <i class="fas fa-search"></i>
-            </div>
 
 		</nav><!-- .site-navigation -->
 
