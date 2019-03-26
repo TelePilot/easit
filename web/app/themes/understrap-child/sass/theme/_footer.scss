@@ -1,9 +1,9 @@
 .footer {
   background-color: #f7f8f8;
-  padding: 50px 0;
+  padding: 45px 0;
 
   .container {
-    padding: 0 20%;
+    padding: 0 15%;
     width: 100%;
     max-width: 100%;
   }
@@ -15,11 +15,7 @@
     padding-bottom: 20px;
 
     #footer-menu {
-      display: flex;
-      flex-direction: row;
-      flex-grow: 6;
-      justify-content: flex-start;
-      margin-right: 50px;
+      width: 100%;
 
       .menu {
         display: flex;
@@ -37,7 +33,7 @@
       }
 
       .sub-menu {
-        margin-top: 20px;
+        margin-top: 5px;
       }
     }
 
@@ -45,11 +41,14 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-      flex-shrink: 6;
       padding-top: 2px;
 
       .contact-section:first-of-type {
-        margin-top: 20px;
+        margin-top: 5px;
+      }
+
+      .contact-section p {
+        font-size: 0.9rem;
       }
     }
   }
@@ -57,26 +56,26 @@
   h2.footer-title {
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.15rem;
   }
 
   h3.footer-title, .menu>.menu-item {
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   h4.footer-title {
     font-weight: 400;
     text-transform: capitalize;
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     margin-bottom: 0;
   }
 
   .sub-menu>.menu-item {
     font-weight: 300;
     text-transform: capitalize;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .footer-lower {
@@ -86,19 +85,23 @@
     justify-content: space-between;
     padding-top: 40px;
 
+    p {
+      font-size: 0.9rem;
+    }
+
     .signup-form {
       position: relative;
       width: 35%;
 
       .newsletter-field {
         width: 100%;
-        border-width: 0;
+        border: 1px solid $easit-black-text;
       }
 
       .btn {
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 1px; // Input border width
+        right: 1px; // Input border width
         background-color: #f2ad00;
         color: #fff;
         padding: 15px 20px;
@@ -109,7 +112,7 @@
       .newsletter-policy {
         padding: 0 5px;
         margin-top: 15px;
-        font-size: 1rem;
+        font-size: 0.9rem;
       }
     }
 

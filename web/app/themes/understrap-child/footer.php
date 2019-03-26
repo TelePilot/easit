@@ -29,7 +29,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 );
             }
             ?>
-            <div class="footer-right-side">
+            <div id="footer-contact-container" class="footer-right-side">
                 <h3 class="footer-title"><?php echo __("Contact", "understrap");?></h3>
                 <div class="contact-section">
                     <h4 class="footer-title"><?php echo __("Phone", "understrap");?>:</h4>
@@ -256,11 +256,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 </script>
 
 <script>
-    // SEARCH
-
-    $(function(){
-
-    });
+    $(function () {
+        const footerContactContainer = $('#footer-contact-container').detach();
+        $("#footer-menu > .menu").append(footerContactContainer);
+    })
 </script>
 
 <script>
