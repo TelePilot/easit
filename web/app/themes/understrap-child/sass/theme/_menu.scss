@@ -96,7 +96,7 @@
     }
   }
 
-  &:nth-child(2n) {
+  &:not(.current_page_item):nth-child(2n) {
     a {
       letter-spacing: 1.25px;
 
@@ -106,7 +106,7 @@
     }
   }
 
-  &:nth-child(3n) {
+  &:not(.current_page_item):nth-child(3n) {
     a {
       letter-spacing: 1.2px;
 
@@ -116,7 +116,7 @@
     }
   }
 
-  &:nth-child(6n) {
+  &:not(.current_page_item):nth-child(6n) {
     a {
       letter-spacing: 0.85px;
 
@@ -126,7 +126,7 @@
     }
   }
 
-  &:nth-child(7n) {
+  &:not(.current_page_item):nth-child(7n) {
     a {
       letter-spacing: 1.3px;
 
