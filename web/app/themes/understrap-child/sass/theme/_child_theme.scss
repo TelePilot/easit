@@ -41,24 +41,19 @@ i {
     margin-left: 0;
 }
 
-.h1,
-h1,
-.h2,
-h2 {
-    font-family: myriad-pro, sans-serif;
+.h1,h1, .h2,h2, .h3,h3, .h4,h4, .h5,h5 {
+    font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: 100;
+    white-space: pre-line;
 }
 
-.h3,
-h3,
-.h4,
-h4,
-.h5,
-h5 {
-    font-family: myriad-pro, sans-serif;
-    font-style: normal;
-    font-weight: 100;
+
+
+.myriad-header {
+    .h1,h1, .h2,h2, .h3,h3, .h4,h4, .h5,h5{
+        font-family: myriad-pro, sans-serif;
+    }
 }
 
 ul {
