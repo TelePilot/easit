@@ -61,9 +61,9 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <button id="newsletter-signup" class="btn"><i class="fas fa-chevron-right"></i></button>
                 <p class="newsletter-policy">
                     <?php
-                    echo __("Genom att fylla i formuläret godkänner du
-                    att dina personuppgifter behandlas enligt vår
-                    integritetspolicy.", "understrap");
+                    echo __("By submitting this form you accept
+                    that your personal details are processed according
+                    to our terms and service agreement.", "understrap");
                     ?>
                 </p>
             </div>
@@ -89,7 +89,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-body">
-                <button id="search-button" class="btn sf-spacing"><?php echo __("Search", 'understrap'); ?></button>
+                <button id="search-button" class="btn sf-spacing"><?php echo __("Search", "understrap"); ?></button>
                 <div class="search-field-container">
                     <input id="search-field" class="sf-spacing" type="text" placeholder="Sök på hemsidan..." />
                 </div>

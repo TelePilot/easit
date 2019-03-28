@@ -2,396 +2,562 @@ msgid ""
 msgstr ""
 "Project-Id-Version: understrap\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/theme/_s\n"
-"POT-Creation-Date: 2016-11-23 20:21+0200\n"
-"PO-Revision-Date: 2017-02-20 13:19+0000\n"
+"POT-Creation-Date: 2019-03-28 20:29+0100\n"
+"PO-Revision-Date: 2019-03-28 20:30+0100\n"
 "Last-Translator: Filip Wessman <filip@effektid.com>\n"
 "Language-Team: Swedish (Swedish)\n"
-"Language: sv-SE\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"Language: sv_SE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Loco-Source-Locale: sv_SE\n"
 "POT-Revision-Date: Mon Jul 04 2016 09:13:18 GMT+0200 (CEST)\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Loco - https://localise.biz/\n"
+"X-Generator: Poedit 2.2.1\n"
 "X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
 "__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
 "_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
 "esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
 "esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
-"X-Poedit-Basepath: ..\n"
-"X-Poedit-SearchPath-0: footer.php\n"
-"X-Poedit-SearchPath-1: header.php\n"
-"X-Poedit-SearchPath-2: index.php\n"
-"X-Poedit-SearchPath-3: statichero.php\n"
-"X-Poedit-SearchPath-4: 404.php\n"
-"X-Poedit-SearchPath-5: archive.php\n"
-"X-Poedit-SearchPath-6: search.php\n"
-"X-Poedit-SearchPath-7: sticky.php\n"
-"X-Poedit-SearchPath-8: single.php\n"
-"X-Poedit-SearchPath-9: sidebar.php\n"
-"X-Poedit-SearchPath-10: comment-form.php\n"
-"X-Poedit-SearchPath-11: comments.php\n"
-"X-Poedit-SearchPath-12: content-none.php\n"
-"X-Poedit-SearchPath-13: content-page.php\n"
-"X-Poedit-SearchPath-14: content-search.php\n"
-"X-Poedit-SearchPath-15: content-single.php\n"
-"X-Poedit-SearchPath-16: content.php\n"
-"X-Poedit-SearchPath-17: hero.php\n"
-"X-Poedit-SearchPath-18: page.php\n"
-"X-Poedit-SearchPath-19: functions.php\n"
-"X-Poedit-SearchPath-20: page-templates\n"
-"X-Poedit-SearchPath-21: inc\n"
-"X-Loco-Parser: loco_parse_po"
+"X-Poedit-Basepath: ../..\n"
+"X-Loco-Parser: loco_parse_po\n"
+"X-Poedit-SearchPath-0: understrap/footer.php\n"
+"X-Poedit-SearchPath-1: understrap/header.php\n"
+"X-Poedit-SearchPath-2: understrap/index.php\n"
+"X-Poedit-SearchPath-3: understrap/404.php\n"
+"X-Poedit-SearchPath-4: understrap/archive.php\n"
+"X-Poedit-SearchPath-5: understrap/search.php\n"
+"X-Poedit-SearchPath-6: understrap/single.php\n"
+"X-Poedit-SearchPath-7: understrap/sidebar.php\n"
+"X-Poedit-SearchPath-8: understrap/comments.php\n"
+"X-Poedit-SearchPath-9: understrap/page.php\n"
+"X-Poedit-SearchPath-10: understrap/functions.php\n"
+"X-Poedit-SearchPath-11: understrap/page-templates\n"
+"X-Poedit-SearchPath-12: understrap/inc\n"
+"X-Poedit-SearchPath-13: understrap-child/page-templates\n"
+"X-Poedit-SearchPath-14: understrap-child/loop-templates\n"
+"X-Poedit-SearchPath-15: understrap-child/footer.php\n"
+"X-Poedit-SearchPath-16: understrap-child/functions.php\n"
+"X-Poedit-SearchPath-17: understrap-child/header.php\n"
+"X-Poedit-SearchPath-18: understrap-child/search.php\n"
+"X-Poedit-SearchPath-19: understrap-child/search_site.php\n"
+"X-Poedit-SearchPath-20: understrap-child/single.php\n"
 
-#: ../comments.php:28
-#, php-format
-msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "En tanke kring &ldquo;%2$s&rdquo;"
-msgstr[1] "%1$s tankar kring &ldquo;%2$s&rdquo;"
-msgstr[2] "&ldquo;%2$s&rdquo;: %1$s комментариев"
+#: understrap-child/footer.php:33
+msgid "Contact"
+msgstr "Kontakt"
 
-#: ../comments.php:35 ../comments.php:56
-msgid "Comment navigation"
-msgstr "Kommentars navigering"
+#: understrap-child/footer.php:35
+msgid "Phone"
+msgstr "Telefon"
 
-#: ../comments.php:37 ../comments.php:58
-msgid "&larr; Older Comments"
-msgstr "&larr; Äldre kommentarer"
-
-#: ../comments.php:40 ../comments.php:61
-msgid "Newer Comments &rarr;"
-msgstr "Nyare kommentarer &rarr;"
-
-#: ../comments.php:72
-msgid "Comments are closed."
-msgstr "Kommentarsfältet är avstängt."
-
-#: ../author.php:27
-msgid "About:"
-msgstr "Om:"
-
-#: ../author.php:32 ../inc/custom-comments.php:16
-msgid "Website"
-msgstr "Website"
-
-#: ../author.php:34
-msgid "Profile"
-msgstr "Profil"
-
-#: ../author.php:38
-msgid "Posts by"
-msgstr "Inlägg av "
-
-#: ../footer.php:24
-msgid "http://wordpress.org/"
-msgstr "http://wordpress.org/"
-
-#: ../footer.php:24
-#, php-format
-msgid "Proudly powered by %s"
-msgstr "Drivs av %s"
-
-#: ../footer.php:26
-#, php-format
-msgid "Theme: %1$s by %2$s."
-msgstr "tema av: %1$s by %2$s."
-
-#: ../header.php:30
-msgid "Skip to content"
-msgstr "Hoppa till innehållet"
-
-#: ../search.php:23
-#, php-format
-msgid "Search Results for: %s"
-msgstr "Sök resultat för: %s"
-
-#: ../404.php:22
-msgid "Oops! That page can&rsquo;t be found."
-msgstr "Oops! Sidan verkar inte finnas."
-
-#: ../404.php:27
-msgid ""
-"It looks like nothing was found at this location. Maybe try one of the links "
-"below or a search?"
-msgstr ""
-"Här verkar det inte finnas något. Du kan prova någon an länkarna "
-"nedan eller söka efter det?"
-
-#: ../404.php:37
-msgid "Most Used Categories"
-msgstr "Most Used Categories"
-
-#. translators: %1$s: smiley
-#: ../404.php:57
-#, php-format
-msgid "Try looking in the monthly archives. %1$s"
-msgstr "Try looking in the monthly archives. %1$s"
-
-#: ../searchform.php:9 ../searchform.php:13
-msgid "Search"
-msgstr "Sök"
-
-#: ../searchform.php:11
-msgid "Search &hellip;"
-msgstr "Sök &hellip;"
-
-#. Name of the template
-msgid "Full Width Page"
-msgstr "Full Width Page"
-
-#. Name of the template
-msgid "Empty Page Template"
-msgstr "Empty Page Template"
-
-#: ../inc/widgets.php:10
-msgid "Sidebar"
-msgstr "Sidebar"
-
-#: ../inc/widgets.php:20
-msgid "Hero Slider"
-msgstr "Hero Slider"
-
-#: ../inc/widgets.php:30
-msgid "Hero Static"
-msgstr "Hero Static"
-
-#: ../inc/widgets.php:40
-msgid "Footer Full"
-msgstr "Sidfot"
-
-#: ../inc/customizer.php:24
-msgid "Slider Settings"
-msgstr "Slider Inställningar"
-
-#: ../inc/customizer.php:33
-msgid "Number of slides displaying at once"
-msgstr "Antal slides som visas samtidigt"
-
-#: ../inc/customizer.php:45
-msgid "Slider Time (in ms)"
-msgstr "Slider tid (i ms)"
-
-#: ../inc/customizer.php:57
-msgid "Loop Slider Content"
-msgstr "Loop Slider Innehåll"
-
-#: ../inc/template-tags.php:18
-#, php-format
-msgid " Edited %4$s"
-msgstr " Redigerat %4$s"
-
-#: ../inc/template-tags.php:29
-#, php-format
-msgctxt "post date"
-msgid "Posted on %s"
-msgstr "Publicerat den %s"
-
-#: ../inc/template-tags.php:34
-#, php-format
-msgctxt "post author"
-msgid "by %s"
-msgstr "av %s"
-
-#. translators: used between list items, there is a space after the comma
-#: ../inc/template-tags.php:51 ../inc/template-tags.php:57
-msgid ", "
-msgstr ", "
-
-#: ../inc/template-tags.php:53
-#, php-format
-msgid "Posted in %1$s"
-msgstr "Publicerat i %1$s"
-
-#: ../inc/template-tags.php:59
-#, php-format
-msgid "Tagged %1$s"
-msgstr "Taggad %1$s"
-
-#: ../inc/template-tags.php:65
-msgid "Leave a comment"
-msgstr "Kommentera"
-
-#: ../inc/template-tags.php:65
-msgid "1 Comment"
-msgstr "1 Kommentar"
-
-#: ../inc/template-tags.php:65
-#, php-format
-msgid "% Comments"
-msgstr "% Kommentarer"
-
-#. translators: %s: Name of current post
-#: ../inc/template-tags.php:72
-#, php-format
-msgid "Edit %s"
-msgstr "Ändra %s"
-
-#: ../inc/setup.php:48
-msgid "Primary Menu"
-msgstr "Huvud meny"
-
-#: ../inc/setup.php:98
-msgid "Read More..."
-msgstr "Läs mer"
-
-#: ../inc/custom-comments.php:12
-msgid "Name"
-msgstr "Namn"
-
-#: ../inc/custom-comments.php:14
+#: understrap-child/footer.php:39 understrap-child/footer.php:60
+#: understrap/inc/custom-comments.php:35
 msgid "Email"
 msgstr "E-post"
 
-#: ../inc/custom-comments.php:25
-msgctxt "noun"
-msgid "Comment"
-msgstr "Kommentarer"
+#: understrap-child/footer.php:43
+msgid "Address"
+msgstr "Address"
 
-#: ../loop-templates/content-single.php:29 ../loop-templates/content.php:33 ..
-#: loop-templates/content-page.php:25
+#: understrap-child/footer.php:56
+msgid "Newsletter"
+msgstr "Nyhetsbrev"
+
+#: understrap-child/footer.php:57
+msgid "Subscribe to our newsletter!"
+msgstr "Prenumerera på vårat nyhetsbrev!"
+
+#: understrap-child/footer.php:64
+msgid ""
+"By submitting this form you accept\n"
+"                    that your personal details are processed according\n"
+"                    to our terms and service agreement."
+msgstr ""
+"Genom att fylla i formuläret godkänner du\n"
+"att dina personuppgifter behandlas enligt vår\n"
+"integritetspolicy."
+
+#: understrap-child/footer.php:92 understrap-child/search.php:29
+msgid "Search"
+msgstr "Sök"
+
+#: understrap-child/functions.php:67
+msgid "Extra Menu"
+msgstr "Extra meny"
+
+#: understrap-child/functions.php:109 understrap-child/functions.php:110
+msgid "Kund"
+msgstr "Kund"
+
+#: understrap-child/functions.php:111
+msgid "Alla kunder"
+msgstr "Alla kunder"
+
+#: understrap-child/functions.php:112 understrap-child/functions.php:113
+msgid "Lägg till ny kund"
+msgstr "Lägg till ny kund"
+
+#: understrap-child/functions.php:114 understrap-child/functions.php:115
+msgid "Kunder"
+msgstr "Kunder"
+
+#: understrap-child/header.php:42 understrap/header.php:36
+msgid "Skip to content"
+msgstr "Hoppa till innehållet"
+
+#: understrap-child/header.php:68 understrap/header.php:62
+msgid "Toggle navigation"
+msgstr "Kommentars navigering"
+
+#: understrap-child/loop-templates/content-page.php:27
 msgid "Pages:"
 msgstr "Sidor:"
 
-#: ../loop-templates/content-none.php:16
-msgid "Nothing Found"
-msgstr "Inget hittades"
+#: understrap-child/loop-templates/content-page.php:37
+msgid "Edit"
+msgstr "Ändra"
 
-#: ../loop-templates/content-none.php:24
+#: understrap-child/loop-templates/content-search.php:16
+#: understrap-child/loop-templates/content-search.php:18
+#, fuzzy
+#| msgid "Pages:"
+msgid "Page"
+msgstr "Sidor:"
+
+#: understrap-child/search.php:35
 #, php-format
-msgid ""
-"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "Redo att skriv ditt första inlägg? <a href=\"%1$s\">Börja här</a>."
+msgid "Search results for: %s"
+msgstr "Sökresultat för: %s"
 
-#: ../loop-templates/content-none.php:28
+#: understrap-child/search.php:58
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
 "Tyvärr fick din sökning inga träffar. Du kan prova igen med nya nyckelord."
 
-#: ../loop-templates/content-none.php:33
+#: understrap/404.php:31
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oops! Sidan verkar inte finnas."
+
+#: understrap/404.php:38
 msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
-msgstr "Vi verkar inte hitta det du söker, Det kanske hjälper att söka."
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Här verkar det inte finnas något. Du kan prova någon an länkarna nedan eller "
+"söka efter det?"
 
-#: ../loop-templates/content-page.php:34
-msgid "Edit"
-msgstr "Ändra"
+#: understrap/404.php:49
+msgid "Most Used Categories"
+msgstr "Most Used Categories"
 
-#: ../woocommerce/myaccount/form-edit-address.php
-msgid "Save Address"
-msgstr "Spara adress"
+#: understrap/404.php:70
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Try looking in the monthly archives. %1$s"
 
-#: ../woocommerce/myaccount/my-orders.php
-msgid "%s for %s item"
-msgstr "%s för %s vara"
+#: understrap/comments.php:38
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr "En tanke kring &ldquo;%s&rdquo;"
 
-#: ../woocommerce/myaccount/my-orders.php
-msgid "Pay"
-msgstr "Betala"
+#: understrap/comments.php:45
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s tanke kring &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s tankar kring &ldquo;%2$s&rdquo;"
+msgstr[2] "%1$s tanke kring &ldquo;%2$s&rdquo;"
 
-#: ../woocommerce/myaccount/my-orders.php
-msgid "View"
-msgstr "Visa"
+#: understrap/comments.php:63 understrap/comments.php:93
+msgid "Comment navigation"
+msgstr "Kommentars navigering"
 
-#: ../woocommerce/myaccount/my-orders.php
-msgid "Cancel"
-msgstr "Avbryt"
+#: understrap/comments.php:66 understrap/comments.php:96
+msgid "&larr; Older Comments"
+msgstr "&larr; Äldre kommentarer"
 
-#: ../woocommerce/myaccount/form-login.php
-msgid "Login"
-msgstr "Login"
+#: understrap/comments.php:70 understrap/comments.php:100
+msgid "Newer Comments &rarr;"
+msgstr "Nyare kommentarer &rarr;"
 
-#: ../woocommerce/myaccount/form-login.php
-msgid "Password"
-msgstr "Lösenord"
+#: understrap/comments.php:115
+msgid "Comments are closed."
+msgstr "Kommentarsfältet är avstängt."
 
-#: ../woocommerce/myaccount/form-login.php
-msgid "Username or email address"
-msgstr "Användarnamn eller E-post adress"
+#: understrap/inc/class-wp-bootstrap-navwalker.php:370
+msgid "Add a menu"
+msgstr "Lägg till en meny"
 
-#: ../woocommerce/myaccount/form-login.php
-msgid "Lost your password?"
-msgstr "Glömt ditt lösenord?"
+#: understrap/inc/custom-comments.php:32
+msgid "Name"
+msgstr "Namn"
 
-#: ../woocommerce/myaccount/form-login.php
-msgid "Username"
-msgstr "Användarnamn"
+#: understrap/inc/custom-comments.php:38
+msgid "Website"
+msgstr "Website"
 
-#: ../woocommerce/myaccount/form-login.php
-msgid "Email address"
-msgstr "E-post adress"
+#: understrap/inc/custom-comments.php:42
+msgid ""
+"Save my name, email, and website in this browser for the next time I comment"
+msgstr ""
 
-#: ../woocommerce/myaccount/form-login.php
-msgid "Register"
-msgstr "Registrera"
+#: understrap/inc/custom-comments.php:63
+msgctxt "noun"
+msgid "Comment"
+msgstr "Kommentarer"
 
-#: ../woocommerce/myaccount/form-login.php
-msgid "Remember me"
-msgstr "Kom ihåg mig"
+#: understrap/inc/custom-header.php:45
+msgid "Default Header Image"
+msgstr ""
 
+#: understrap/inc/customizer.php:41
+msgid "Theme Layout Settings"
+msgstr ""
 
-#: ../woocommerce/myaccount/form-edit-account.php
-msgid "First name"
-msgstr "Förnamn"
+#: understrap/inc/customizer.php:43
+msgid "Container width and sidebar defaults"
+msgstr ""
 
-#: ../woocommerce/myaccount/form-edit-account.php
-msgid "Last name"
-msgstr "Efternamn"
+#: understrap/inc/customizer.php:78
+msgid "Container Width"
+msgstr ""
 
-#: ../woocommerce/myaccount/form-edit-account.php
-msgid "Email adress"
-msgstr "E-post adress"
+#: understrap/inc/customizer.php:79
+msgid "Choose between Bootstrap's container and container-fluid"
+msgstr ""
 
-#: ../woocommerce/myaccount/form-edit-account.php
-msgid "Current Password (leave blank to leave unchanged)"
-msgstr "Nuvarande lösenord (lämna tomt för att inte ändra)"
+#: understrap/inc/customizer.php:84
+msgid "Fixed width container"
+msgstr ""
 
+#: understrap/inc/customizer.php:85
+msgid "Full width container"
+msgstr "Full Width Page"
 
-#: ../woocommerce/myaccount/form-edit-account.php
-msgid "New Password (leave blank to leave unchanged)"
-msgstr "Nytt lösenord (lämna tomt för att inte ändra)"
+#: understrap/inc/customizer.php:102
+msgid "Sidebar Positioning"
+msgstr ""
 
-#: ../woocommerce/myaccount/form-edit-account.php
-msgid "Confirm New Password"
-msgstr "Bekräfta nytt lösenord"
+#: understrap/inc/customizer.php:103
+msgid ""
+"Set sidebar's default position. Can either be: right, left, both or none. "
+"Note: this can be overridden on individual pages."
+msgstr ""
 
-#: ../woocommerce/myaccount/form-edit-account.php
-msgid "Password Change"
-msgstr "Byt lösenord"
+#: understrap/inc/customizer.php:110
+msgid "Right sidebar"
+msgstr "Sidebar"
 
-#: ../woocommerce/myaccount/form-edit-account.php
-msgid "Save changes"
-msgstr "Spara ändringar"
+#: understrap/inc/customizer.php:111
+msgid "Left sidebar"
+msgstr "Sidebar"
 
-#. Name of the theme
-msgid "UnderStrap"
-msgstr "UnderStrap"
+#: understrap/inc/customizer.php:112
+msgid "Left & Right sidebars"
+msgstr ""
 
-#. Theme URI of the theme
+#: understrap/inc/customizer.php:113
+msgid "No sidebar"
+msgstr "Sidebar"
+
+#: understrap/inc/extras.php:98
+msgid "Post navigation"
+msgstr "Kommentars navigering"
+
+#: understrap/inc/extras.php:103
+msgctxt "Previous post link"
+msgid "<i class=\"fa fa-angle-left\"></i>&nbsp;%title"
+msgstr ""
+
+#: understrap/inc/extras.php:106
+msgctxt "Next post link"
+msgid "%title&nbsp;<i class=\"fa fa-angle-right\"></i>"
+msgstr ""
+
+#: understrap/inc/hooks.php:32
+msgid "http://wordpress.org/"
+msgstr "http://wordpress.org/"
+
+#: understrap/inc/hooks.php:35
+#, php-format
+msgid "Proudly powered by %s"
+msgstr "Drivs av %s"
+
+#: understrap/inc/hooks.php:39
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr "tema av: %1$s by %2$s."
+
+#: understrap/inc/hooks.php:39
 msgid "http://understrap.com"
 msgstr "http://understrap.com"
 
-#. Description of the theme
-msgid ""
-"Combination of Automattic´s _s theme and Bootstrap 4. Made as a solid "
-"starting point for your next theme project and WordPress website. Use it as "
-"starter theme or as parent theme. It is up to you."
+#: understrap/inc/hooks.php:43
+#, php-format
+msgid "Version: %1$s"
 msgstr ""
-"En kombination av Automattic´s _s tema och Bootstrap 4. Gjort som en bas för "
-"ditt nästa tema eller WordPress webbplats. Använd det som en grund eller som "
-"ett förälder tema. Det är upp till dig."
 
-#. Author of the theme
-msgid "Holger Koenemann"
-msgstr "Holger Koenemann"
+#: understrap/inc/pagination.php:21
+msgid "&laquo;"
+msgstr ""
 
-#. Author URI of the theme
-msgid "http://www.holgerkoenemann.de"
-msgstr "http://www.holgerkoenemann.de"
+#: understrap/inc/pagination.php:22
+msgid "&raquo;"
+msgstr ""
+
+#: understrap/inc/pagination.php:23
+#, fuzzy
+#| msgid "Comment navigation"
+msgid "Posts navigation"
+msgstr "Kommentars navigering"
+
+#: understrap/inc/setup.php:49
+msgid "Primary Menu"
+msgstr "Huvud meny"
+
+#: understrap/inc/setup.php:132
+msgid "Read More..."
+msgstr "Läs mer"
+
+#: understrap/inc/template-tags.php:32
+#, fuzzy
+#| msgctxt "post date"
+#| msgid "Posted on %s"
+msgctxt "post date"
+msgid "Posted on"
+msgstr "Publicerat den %s"
+
+#: understrap/inc/template-tags.php:40
+msgctxt "post author"
+msgid "by"
+msgstr ""
+
+#: understrap/inc/template-tags.php:40
+#, fuzzy
+#| msgid "Posts by"
+msgctxt "post author"
+msgid "Posted by"
+msgstr "Inlägg av "
+
+#: understrap/inc/template-tags.php:58 understrap/inc/template-tags.php:64
+msgid ", "
+msgstr ", "
+
+#: understrap/inc/template-tags.php:61
+#, fuzzy, php-format
+#| msgid "Posted in %1$s"
+msgid "Posted in %s"
+msgstr "Publicerat i %1$s"
+
+#: understrap/inc/template-tags.php:67
+#, fuzzy, php-format
+#| msgid "Tagged %1$s"
+msgid "Tagged %s"
+msgstr "Taggad %1$s"
+
+#: understrap/inc/template-tags.php:72
+msgid "Leave a comment"
+msgstr "Kommentera"
+
+#: understrap/inc/template-tags.php:72
+msgid "1 Comment"
+msgstr "1 Kommentar"
+
+#: understrap/inc/template-tags.php:72
+msgid "% Comments"
+msgstr "% Kommentarer"
+
+#: understrap/inc/template-tags.php:78
+#, php-format
+msgid "Edit %s"
+msgstr "Ändra %s"
+
+#: understrap/inc/widgets.php:59
+#, fuzzy
+#| msgid "Sidebar"
+msgid "Right Sidebar"
+msgstr "Sidebar"
+
+#: understrap/inc/widgets.php:61
+msgid "Right sidebar widget area"
+msgstr ""
+
+#: understrap/inc/widgets.php:69
+#, fuzzy
+#| msgid "Sidebar"
+msgid "Left Sidebar"
+msgstr "Sidebar"
+
+#: understrap/inc/widgets.php:71
+msgid "Left sidebar widget area"
+msgstr ""
+
+#: understrap/inc/widgets.php:79
+msgid "Hero Slider"
+msgstr "Hero Slider"
+
+#: understrap/inc/widgets.php:81
+msgid "Hero slider area. Place two or more widgets here and they will slide!"
+msgstr ""
+
+#: understrap/inc/widgets.php:89
+msgid "Hero Canvas"
+msgstr ""
+
+#: understrap/inc/widgets.php:91
+msgid "Full size canvas hero area for Bootstrap and other custom HTML markup"
+msgstr ""
+
+#: understrap/inc/widgets.php:99
+#, fuzzy
+#| msgid "Footer Full"
+msgid "Top Full"
+msgstr "Sidfot"
+
+#: understrap/inc/widgets.php:101
+msgid "Full top widget with dynamic grid"
+msgstr ""
+
+#: understrap/inc/widgets.php:109
+msgid "Footer Full"
+msgstr "Sidfot"
+
+#: understrap/inc/widgets.php:111
+msgid "Full sized footer widget with dynamic grid"
+msgstr ""
+
+#: understrap/search.php:35
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Sökresultat för: %s"
+
+#~ msgid "About:"
+#~ msgstr "Om:"
+
+#~ msgid "Profile"
+#~ msgstr "Profil"
+
+#~ msgid "Search &hellip;"
+#~ msgstr "Sök &hellip;"
+
+#~ msgid "Empty Page Template"
+#~ msgstr "Empty Page Template"
+
+#~ msgid "Hero Static"
+#~ msgstr "Hero Static"
+
+#~ msgid "Slider Settings"
+#~ msgstr "Slider Inställningar"
+
+#~ msgid "Number of slides displaying at once"
+#~ msgstr "Antal slides som visas samtidigt"
+
+#~ msgid "Slider Time (in ms)"
+#~ msgstr "Slider tid (i ms)"
+
+#~ msgid "Loop Slider Content"
+#~ msgstr "Loop Slider Innehåll"
+
+#~ msgid " Edited %4$s"
+#~ msgstr " Redigerat %4$s"
+
+#~ msgctxt "post author"
+#~ msgid "by %s"
+#~ msgstr "av %s"
+
+#~ msgid "Nothing Found"
+#~ msgstr "Inget hittades"
+
+#~ msgid ""
+#~ "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+#~ msgstr "Redo att skriv ditt första inlägg? <a href=\"%1$s\">Börja här</a>."
+
+#~ msgid ""
+#~ "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+#~ "searching can help."
+#~ msgstr "Vi verkar inte hitta det du söker, Det kanske hjälper att söka."
+
+#~ msgid "%s for %s item"
+#~ msgstr "%s för %s vara"
+
+#~ msgid "Pay"
+#~ msgstr "Betala"
+
+#~ msgid "View"
+#~ msgstr "Visa"
+
+#~ msgid "Cancel"
+#~ msgstr "Avbryt"
+
+#~ msgid "Login"
+#~ msgstr "Login"
+
+#~ msgid "Password"
+#~ msgstr "Lösenord"
+
+#~ msgid "Username or email address"
+#~ msgstr "Användarnamn eller E-post adress"
+
+#~ msgid "Lost your password?"
+#~ msgstr "Glömt ditt lösenord?"
+
+#~ msgid "Username"
+#~ msgstr "Användarnamn"
+
+#~ msgid "Email address"
+#~ msgstr "E-post adress"
+
+#~ msgid "Register"
+#~ msgstr "Registrera"
+
+#~ msgid "Remember me"
+#~ msgstr "Kom ihåg mig"
+
+#~ msgid "First name"
+#~ msgstr "Förnamn"
+
+#~ msgid "Last name"
+#~ msgstr "Efternamn"
+
+#~ msgid "Email adress"
+#~ msgstr "E-post adress"
+
+#~ msgid "Current Password (leave blank to leave unchanged)"
+#~ msgstr "Nuvarande lösenord (lämna tomt för att inte ändra)"
+
+#~ msgid "New Password (leave blank to leave unchanged)"
+#~ msgstr "Nytt lösenord (lämna tomt för att inte ändra)"
+
+#~ msgid "Confirm New Password"
+#~ msgstr "Bekräfta nytt lösenord"
+
+#~ msgid "Password Change"
+#~ msgstr "Byt lösenord"
+
+#~ msgid "Save changes"
+#~ msgstr "Spara ändringar"
+
+#~ msgid "UnderStrap"
+#~ msgstr "UnderStrap"
+
+#~ msgid ""
+#~ "Combination of Automattic´s _s theme and Bootstrap 4. Made as a solid "
+#~ "starting point for your next theme project and WordPress website. Use it "
+#~ "as starter theme or as parent theme. It is up to you."
+#~ msgstr ""
+#~ "En kombination av Automattic´s _s tema och Bootstrap 4. Gjort som en bas "
+#~ "för ditt nästa tema eller WordPress webbplats. Använd det som en grund "
+#~ "eller som ett förälder tema. Det är upp till dig."
+
+#~ msgid "Holger Koenemann"
+#~ msgstr "Holger Koenemann"
+
+#~ msgid "http://www.holgerkoenemann.de"
+#~ msgstr "http://www.holgerkoenemann.de"
