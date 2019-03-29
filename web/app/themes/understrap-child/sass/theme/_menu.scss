@@ -96,7 +96,7 @@
     }
   }
 
-  &:not(.current_page_item) {
+  &:not(.current_page_item):not(.current-page-ancestor) {
     &:nth-child(2n) {
       a {
         letter-spacing: 1.25px;
